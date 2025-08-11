@@ -18,7 +18,7 @@ const HeroSection = () => {
                         </p>
                         <p className="flex justify-center items-center text-lg text-[var(--text-gray)] max-w-4xl leading-relaxed text-center">
                             Passionate about creating modern web and mobile applications with React.js,
-                            Next.js, and Tailwind CSS. Currently specializing in Web and Mobile App Development.
+                            Next.js, Tailwind CSS and Supabase. Currently specializing in Web and Mobile App Development.
                         </p>
                     </div>
 

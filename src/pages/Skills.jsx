@@ -78,18 +78,17 @@ const Skills = () => {
 
   return (
     <div>
-      <section id="skills" className="py-20 bg-gray-800 border-b border-gray-700">
+      <section id="skills" className="py-20 bg-[var(--background-color)]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white flex items-center justify-center gap-3">
-            <span className="text-cyan-400">⚡</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex items-center justify-center gap-3">
             Technical Skills
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {skillCategories.map((category, index) => (
-              <div key={index} className="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+              <div key={index} className="bg-[var(--container-color)] rounded-xl p-6 border border-[var(--border-color)] hover:border-[var(--primary-color)] transition-all duration-300 hover:shadow-lg hover:shadow-green-500/10">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-2xl text-cyan-400">{category.icon}</span>
-                  <h3 className="text-lg font-semibold text-white">{category.title}</h3>
+                  <span className="text-2xl text-[var(--primary-color)]">{category.icon}</span>
+                  <h3 className="text-lg font-semibold text-[var(--text-color)]">{category.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
