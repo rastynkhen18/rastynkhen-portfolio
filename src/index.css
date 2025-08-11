@@ -2,27 +2,28 @@
 
 :root {
   --primary-color: #34B27B;
-  --black-color: #11181C;
-  --gray-color: #333;
-  --white-color: #FFFFFF;
+  --background-color: #121212;
+  --container-color: #242424;
+  --border-color: #363636;
+  --text-color: #FaFaFa;
   --text-gray: #818181;
 }
 
 
 :root.dark {
   --primary-color: #34B27B;
-  --black-color: #11181C;
-  --gray-color: #333;
-  --text-white: #FFFFFF;
+  --background-color: #121212;
+  --container-color: #242424;
+  --border-color: #363636;
+  --text-color: #FaFaFa;
   --text-gray: #818181;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
   font-family: system-ui, sans-serif;
- 
 }
 
 html {

@@ -1,7 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
+import Home from './pages/Home';
+import About from './pages/About';
+
+
 
 
 
@@ -10,15 +13,14 @@ const App = () => {
     <div>
       <Router>
         <Header />
-        <HeroSection/>
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/*" element={<ServicesRoutes />} />
+          {/* <Route path="/contact" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} /> */}
         </Routes>
-        <Footer /> */}
+        {/* <Footer /> */}
       </Router>
     </div>
   )

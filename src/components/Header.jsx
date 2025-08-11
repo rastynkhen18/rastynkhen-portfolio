@@ -24,7 +24,6 @@ const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 	const [servicesOpen, setServicesOpen] = useState(false); // desktop dropdown
-	const [mobileServicesOpen, setMobileServicesOpen] = useState(false); // mobile accordion
 
 	const mobileMenuRef = useRef(null);
 	const desktopServicesRef = useRef(null);
@@ -54,17 +53,16 @@ const Header = () => {
 	}, [servicesOpen]);
 
 	return (
-		<header className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? "bg-[var(--black-color)] shadow-md" : "text-[var(--white-color)]"}`}>
+		<header className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? "bg-[var(--background-color)] text-[var(--text-color)] shadow-md" : "text-[var(--text-color)]"}`}>
 			<div className="flex justify-between md:justify-around items-center h-16 px-5">
 				<div>
 					<Link to="/" reloadDocument>
-						{/* <img src={Logo} alt="Digo Traders Incorporated Logo" className="cursor-pointer w-18" /> */}
-						<h1>RK</h1>
+						<h1 className="text-[var(--text-color)] cursor-pointer">rastynkhen.dev</h1>
 					</Link>
 				</div>
 
 				{/* Desktop Nav */}
-				<nav className={`hidden md:flex justify-center items-center gap-10 ${scrolled ? "text-[var(--white-color)]" : "text-[var(--secondary-color)]"}`}>
+				<nav className={`hidden md:flex justify-center items-center gap-10 ${scrolled ? "text-[var(--text-color)]" : "text-[var(--text-color)]"}`}>
 					<NavLink to="/" className={getLinkClass} reloadDocument>
 						Home
 					</NavLink>
@@ -89,9 +87,9 @@ const Header = () => {
 				{/* Burger Icon */}
 				<div className="md:hidden z-20">
 					{isOpen ? (
-						<X size={28} onClick={() => setIsOpen(false)} className={`cursor-pointer ${scrolled ? "text-[var(--secondary-color)]" : "text-[var(--secondary-color)]"}`} />
+						<X size={28} onClick={() => setIsOpen(false)} className={`cursor-pointer ${scrolled ? "text-[var(--text-gray)]" : "text-[var(--text-gray)]"}`} />
 					) : (
-						<Menu size={28} onClick={() => setIsOpen(true)} className={`cursor-pointer ${scrolled ? "text-[var(--secondary-color)]" : "text-[var(--secondary-color)]"}`} />
+						<Menu size={28} onClick={() => setIsOpen(true)} className={`cursor-pointer ${scrolled ? "text-[var(--text-gray)]" : "text-[var(--text-gray)]"}`} />
 					)}
 				</div>
 			</div>
@@ -99,8 +97,8 @@ const Header = () => {
 			{/* Mobile Menu */}
 			<div
 				ref={mobileMenuRef}
-				className={`absolute z-40 top-16 left-0 w-full ${scrolled ? "bg-[var(--white-color)] text-[var(--secondary-color)]" : "bg-[var(--white-color)] text-[var(--secondary-color)]"
-					} flex flex-col items-start gap-6 px-10 py-5  transition-all duration-300 md:hidden ${isOpen ? "translate-x-0 opacity-100" : "-translate-x-[-130%] opacity-0 pointer-events-none"} ${scrolled ? "text-[var(--secondary-color)]" : "text-[var(--secondary-color)]"
+				className={`absolute z-40 top-16 left-0 w-full ${scrolled ? "bg-[var(--container-color)] text-[var(--text-color)]" : "bg-[var(--container-color)] text-[var(--text-color)]"
+					} flex flex-col items-center gap-6 px-10 py-5  transition-all duration-300 md:hidden ${isOpen ? "translate-x-0 opacity-100" : "-translate-x-[-130%] opacity-0 pointer-events-none"} ${scrolled ? "text-[var(--text-color)]" : "text-[var(--text-color)]"
 					}`}
 			>
 				<NavLink to="/" className={getLinkClass} onClick={() => setIsOpen(false)} reloadDocument>

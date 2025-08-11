@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Profilepic from '../assets/images/rk.jpg'
-import TechStackSlideshow from '../components/TechStackSlideshow'
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -295,7 +294,6 @@ export default function App() {
       </section>
 
       {/* Tech Stack Slideshow Section */}
-      <TechStackSlideshow />
 
       {/* About Section with Education Content */}
       <section id="about" className="py-20 bg-gray-900 border-b border-gray-700">

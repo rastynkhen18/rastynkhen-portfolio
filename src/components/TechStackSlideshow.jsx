@@ -54,8 +54,9 @@ const TechStackSlideshow = () => {
   const repeatedTechStack = [...techStack, ...techStack, ...techStack];
 
   return (
-    <div className="overflow-hidden relative w-full flex flex-col items-center text-center bg-[var(--black-color)] p-5">
-      <style>{`
+    <div className="flex justify-center items-center">
+      <div className="w-full md:w-[70%] flex flex-col justify-center items-center text-center bg-[var(--black-color)] p-5">
+        <style>{`
         .slideshow-viewport {
           width: 100%;
           overflow: hidden;
@@ -63,36 +64,34 @@ const TechStackSlideshow = () => {
         .slideshow-track {
           display: flex;
           width: max-content;
-          animation: scroll-left 30s linear infinite;
+          animation: scroll-left 50s linear infinite;
         }
         @keyframes scroll-left {
           0% { transform: translateX(0); }
           100% { transform: translateX(-33.33%); }
         }
-        .slideshow-track:hover {
-          animation-play-state: paused;
-        }
       `}</style>
 
-      <h2 className="text-xl md:text-2xl font-bold text-[#fff] py-3">My Tech Stack</h2>
+        <h2 className="text-xl md:text-2xl font-bold text-[#fff] py-3">My Tech Stack</h2>
 
-      <div className="relative w-full">
-        {/* Gradient overlays */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-10 z-10" />
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-10 z-10" />
+        <div className="relative w-full">
+          {/* Gradient overlays */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-10 z-10" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-10 z-10" />
 
-        {/* Sliding track */}
-        <div className="slideshow-viewport">
-          <div className="slideshow-track">
-            {repeatedTechStack.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col md:flex-row items-center gap-2 cursor-pointer transition-colors shrink-0 text-[var(--white-color)] font-semibold px-6"
-              >
-                {item.icon}
-                <span>{item.label}</span>
-              </div>
-            ))}
+          {/* Sliding track */}
+          <div className="slideshow-viewport">
+            <div className="slideshow-track">
+              {repeatedTechStack.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row items-center gap-2 cursor-pointer transition-colors shrink-0 text-[var(--white-color)] font-semibold px-6"
+                >
+                  {item.icon}
+                  <span>{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
