@@ -60,15 +60,15 @@ const projects = [
 const Projects = () => {
   return (
     <div>
-      <section id="projects" className="py-20 bg-gray-900 border-b border-gray-700">
+      <section id="projects" className="py-20 bg-[var(--background-color)]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white flex items-center justify-center gap-3">
-            <span className="text-cyan-400">▣</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex items-center justify-center gap-3">
+            <span className="text-[var(--primary-color)]">▣</span>
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {projects.map((project, index) => (
-              <div key={index} className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 group">
+              <div key={index} className="bg-[var(--container-color)] rounded-xl overflow-hidden border border-[var(--border-color)] hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 group">
                 <div className="aspect-video overflow-hidden relative">
                   <img
                     src={project.image || "/placeholder.svg"}
@@ -80,8 +80,8 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                  <p className="text-gray-400 mb-4 text-sm leading-relaxed">{project.description}</p>
+                  <h3 className="text-xl font-semibold text-[var(--text-color)] mb-2">{project.title}</h3>
+                  <p className="text-[var(--text-gray)] mb-4 text-sm leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
                       <span
@@ -95,14 +95,14 @@ const Projects = () => {
                   <div className="flex gap-3">
                     <a
                       href={project.liveUrl}
-                      className="flex-1 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-200 text-center text-sm font-medium flex items-center justify-center gap-2"
+                      className="flex-1 px-4 py-2 bg-[var(--primary-color)]  text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-medium flex items-center justify-center gap-2"
                     >
                       <span>▶</span>
                       Live Demo
                     </a>
                     <a
                       href={project.githubUrl}
-                      className="flex-1 px-4 py-2 border border-gray-600 text-gray-300 rounded-lg hover:bg-gray-700 hover:border-cyan-500 hover:text-cyan-400 transition-all duration-200 text-center text-sm font-medium flex items-center justify-center gap-2"
+                      className="flex-1 px-4 py-2 bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-medium flex items-center justify-center gap-2"
                     >
                       <span>⎇</span>
                       GitHub

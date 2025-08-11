@@ -46,6 +46,7 @@ const techStack = [
   { icon: <img src={JavaIcon} alt="Java" className="w-6 h-6" />, label: "Java" },
   { icon: <img src={CSharpIcon} alt="C#" className="w-6 h-6" />, label: "C#" },
   { icon: <img src={PythonIcon} alt="Python" className="w-6 h-6" />, label: "Python" },
+  { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" />, label: "JavaScript" },
   { icon: <img src={TypescriptIcon} alt="TypeScript" className="w-6 h-6" />, label: "TypeScript" },
   { icon: <img src={GitIcon} alt="Git/GitHub" className="w-6 h-6" />, label: "Git/GitHub" },
   { icon: <img src={VercelIcon} alt="Vercel" className="w-6 h-6" />, label: "Vercel" },
@@ -72,9 +73,6 @@ const TechStackSlideshow = () => {
           100% { transform: translateX(-33.33%); }
         }
       `}</style>
-
-        <h2 className="text-xl md:text-2xl font-bold text-[#fff] py-3">My Tech Stack</h2>
-
         <div className="relative w-full">
           {/* Gradient overlays */}
           <div className="pointer-events-none absolute left-0 top-0 h-full w-10 z-10" />
@@ -93,6 +91,7 @@ const TechStackSlideshow = () => {
                 </div>
               ))}
             </div>
+            <p className="text-base text-[var(--text-gray)] py-5">Built with the modern development tools that shape my tech stack.</p>
           </div>
         </div>
       </div>
