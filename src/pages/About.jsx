@@ -4,7 +4,7 @@ import Profilepic from '../assets/images/rk.jpg'
 const About = () => {
   return (
     <div>
-      <section id="about" className="py-20 bg-[var(--gray-color)]">
+      <section id="about" className="py-20 bg-[var(--gray-color)] min-h-screen">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex items-center justify-center gap-3">

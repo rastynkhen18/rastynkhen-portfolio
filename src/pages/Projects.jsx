@@ -60,7 +60,7 @@ const projects = [
 const Projects = () => {
   return (
     <div>
-      <section id="projects" className="py-20 bg-[var(--background-color)]">
+      <section id="projects" className="py-20 bg-[var(--background-color)] min-h-screen">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex items-center justify-center gap-3">
             <span className="text-[var(--primary-color)]">▣</span>
