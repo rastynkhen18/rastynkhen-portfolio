@@ -5,9 +5,9 @@ const Contact = () => {
     <div>
       <section id="contact" className="py-50 bg-[var(--background-color)] min-h-screen">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[var(--text-color)] flex items-center justify-center gap-3">
-            <span className="text-[var(--primary-color)]">✉</span>
-            Let's Connect
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <span className="text-[var(--primary-color)]">✉ <mark className='bg-transparent text-[var(--text-color)]'>Let's Connect</mark></span>
+            <span className="w-24 h-1 bg-[var(--primary-color)]"></span>
           </h2>
           <p className="text-xl mb-12 text-[var(--text-gray)] max-w-2xl mx-auto">
             I'm always interested in new opportunities and collaborations.
@@ -15,7 +15,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
-              href="rastynkhenacasio18@gmail.com"
+              href="mailto:rastynkhenacasio18@gmail.com"
               target='_blank'
               className="px-8 py-4 bg-[var(--primary-color)] text-[var(--white-color)] rounded-xl transition-all duration-300 font-medium flex items-center justify-center gap-2 shadow-lg"
             >

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Menu, X } from "lucide-react";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -100,6 +101,7 @@ const Header = () => {
 							{section.charAt(0).toUpperCase() + section.slice(1)}
 						</HashLink>
 					))}
+					<DarkModeToggle/>
 				</nav>
 
 				{/* Burger Icon */}

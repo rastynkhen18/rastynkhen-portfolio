@@ -7,8 +7,9 @@ const About = () => {
       <section id="about" className="py-20 bg-[var(--gray-color)] min-h-screen">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex items-center justify-center gap-3">
-              About <mark className='bg-transparent text-[var(--primary-color)]'>Me</mark>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+              <span className="flex items-center gap-3">About <mark className='bg-transparent text-[var(--primary-color)]' >Me</mark></span>
+              <span className="w-24 h-1 bg-[var(--primary-color)]"></span>
             </h2>
 
             <div className="grid lg:grid-cols-2 gap-8">
@@ -19,7 +20,7 @@ const About = () => {
                 </h3>
                 <div className="space-y-4 text-[var(--text-gray)] leading-relaxed">
                   <p>
-                    I'm a dedicated 4th year Information Technology student at Bulacan State University - Bustos Campus,
+                    I'm a 4th year Information Technology student at Bulacan State University - Bustos Campus,
                     specializing in Web and Mobile App Development. With a comprehensive skill set spanning frontend,
                     backend, mobile, and game development, I'm passionate about creating innovative digital solutions.
                   </p>
