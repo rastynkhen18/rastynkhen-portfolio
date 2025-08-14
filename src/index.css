@@ -30,6 +30,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Make adaptive icons work properly in both light and dark modes */
+.adaptive-icon {
+  filter: brightness(0) saturate(100%) !important;
+}
+
+:root.dark .adaptive-icon {
+  filter: brightness(0) saturate(100%) invert(1) !important;
+}
+
 
 
 

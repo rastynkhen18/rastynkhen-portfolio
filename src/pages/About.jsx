@@ -1,5 +1,10 @@
 import React from 'react'
 import Profilepic from '../assets/images/rk.jpg'
+import FacebookIcon from '../assets/icons/facebook.svg'
+import TwitterXIcon from '../assets/icons/twitter-x.svg'
+import InstagramIcon from '../assets/icons/instagram.svg'
+import LinkedInIcon from '../assets/icons/linkedin.svg'
+import DarkModeIcon from '../components/DarkModeIcon'
 
 const About = () => {
   return (
@@ -28,13 +33,40 @@ const About = () => {
                     My journey in technology has equipped me with expertise in modern frameworks like React.js, Next.js,
                     and React Native, along with strong foundations in multiple programming languages and development tools.
                   </p>
+                  
+                  {/* Social Media Links */}
+                  <div className="pt-6 border-t border-gray-700 mt-6">
+                    <h4 className="text-lg font-medium text-white mb-4">Connect with me</h4>
+                    <div className="flex space-x-4">
+                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                         className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-opacity-10 bg-white hover:bg-[var(--primary-color)] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden" 
+                         aria-label="Facebook">
+                        <DarkModeIcon src={FacebookIcon} alt="Facebook" className="w-5 h-5 z-10" />
+                      </a>
+                      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
+                         className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-opacity-10 bg-white hover:bg-[var(--primary-color)] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden" 
+                         aria-label="Twitter/X">
+                        <DarkModeIcon src={TwitterXIcon} alt="Twitter/X" className="w-5 h-5 z-10" />
+                      </a>
+                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+                         className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-opacity-10 bg-white hover:bg-[var(--primary-color)] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden" 
+                         aria-label="Instagram">
+                        <DarkModeIcon src={InstagramIcon} alt="Instagram" className="w-5 h-5 z-10" />
+                      </a>
+                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+                         className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-opacity-10 bg-white hover:bg-[var(--primary-color)] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden" 
+                         aria-label="LinkedIn">
+                        <DarkModeIcon src={LinkedInIcon} alt="LinkedIn" className="w-5 h-5 z-10" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Education Info */}
-              <div className="flex justify-center items-center">
-                <div className="relative">
-                  <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl">
+              {/* Profile Picture */}
+              <div className="flex flex-col justify-center items-center">
+                <div className="relative mb-6">
+                  <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-[var(--primary-color)] transition-all duration-300 transform hover:scale-[1.02] hover:shadow-[0_20px_25px_rgba(0,0,0,0.25)]">
                     <img
                       src={Profilepic}
                       alt="Rastyn Khen Ong Acasio"

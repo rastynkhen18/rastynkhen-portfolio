@@ -1,4 +1,5 @@
 import React from "react";
+import DarkModeIcon from "./DarkModeIcon";
 
 import HtmlIcon from "../assets/icons/html.svg";
 import CssIcon from "../assets/icons/css.svg";
@@ -33,19 +34,19 @@ const techStack = [
   { icon: <img src={HtmlIcon} alt="HTML" className="w-6 h-6" />},
   { icon: <img src={CssIcon} alt="CSS" className="w-6 h-6" />},
   { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" /> },
-  { icon: <img src={PhpIcon} alt="PHP" className="w-6 h-6" />},
+  { icon: <DarkModeIcon src={PhpIcon} alt="PHP" className="w-6 h-6" />},
   { icon: <img src={LaravelIcon} alt="PHP" className="w-6 h-6" /> },
   { icon: <img src={MysqlIcon} alt="MySQL" className="w-6 h-6" />},
-  { icon: <img src={PostgresqlIcon} alt="PostgreSQL" className="w-6 h-6" />},
-  { icon: <img src={MongodbIcon} alt="MongoDB" className="w-6 h-6" />},
+  // { icon: <img src={PostgresqlIcon} alt="PostgreSQL" className="w-6 h-6" />},
+  // { icon: <img src={MongodbIcon} alt="MongoDB" className="w-6 h-6" />},
   { icon: <img src={ReactIcon} alt="React.js" className="w-6 h-6" />},
   { icon: <img src={TailwindIcon} alt="Tailwind CSS" className="w-6 h-6" /> },
-  { icon: <img src={BootstrapIcon} alt="Bootstrap" className="w-6 h-6" />},
+  // { icon: <img src={BootstrapIcon} alt="Bootstrap" className="w-6 h-6" />},
   { icon: <img src={NextIcon} alt="Next.js" className="w-6 h-6" />},
   { icon: <img src={SupabaseIcon} alt="Supabase" className="w-6 h-6" />},
   { icon: <img src={AndroidStudioIcon} alt="Android Studio" className="w-6 h-6" />},
   { icon: <img src={FirebaseIcon} alt="Firebase" className="w-6 h-6" />},
-  { icon: <img src={UnityIcon} alt="Unity" className="w-6 h-6" />},
+  { icon: <DarkModeIcon src={UnityIcon} alt="Unity" className="w-6 h-6" />},
   { icon: <img src={ReactNativeIcon} alt="React Native" className="w-6 h-6" />},
   { icon: <img src={FlutterIcon} alt="Flutter" className="w-6 h-6" />},
   { icon: <img src={FigmaIcon} alt="Figma" className="w-6 h-6" />},
@@ -58,7 +59,7 @@ const techStack = [
   { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" />},
   { icon: <img src={TypescriptIcon} alt="TypeScript" className="w-6 h-6" />},
   { icon: <img src={GitIcon} alt="Git" className="w-6 h-6" />},
-  { icon: <img src={VercelIcon} alt="Vercel" className="w-6 h-6" />}
+  { icon: <DarkModeIcon src={VercelIcon} alt="Vercel" className="w-6 h-6" />}
 ];
 
 const TechStackSlideshow = () => {
@@ -81,6 +82,13 @@ const TechStackSlideshow = () => {
           0% { transform: translateX(0); }
           100% { transform: translateX(-33.33%); }
         }
+        /* Ensure icons are visible in both light and dark mode */
+        .tech-icon {
+          filter: brightness(0) saturate(100%);
+        }
+        :root.dark .tech-icon {
+          filter: brightness(0) saturate(100%) invert(1);
+        }
       `}</style>
         <div className="relative w-full">
           {/* Gradient overlays */}
@@ -100,7 +108,7 @@ const TechStackSlideshow = () => {
                 </div>
               ))}
             </div>
-            <p className="text-base text-[var(--text-gray)] py-5">Equiped me with the modern development tools that shape my tech stack.</p>
+            <p className="text-base text-[var(--text-gray)] py-5">Equipped me with the modern development tools that shape my tech stack.</p>
           </div>
         </div>
       </div>
