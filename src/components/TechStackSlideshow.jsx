@@ -6,6 +6,8 @@ import CssIcon from "../assets/icons/css.svg";
 import JsIcon from "../assets/icons/javascript.svg";
 import PhpIcon from "../assets/icons/php.svg";
 import LaravelIcon from "../assets/icons/laravel.svg";
+import NodejsIcon from "../assets/icons/nodejs.svg";
+import ExpressIcon from "../assets/icons/expressjs.svg";
 import MysqlIcon from "../assets/icons/mysql.svg";
 import PostgresqlIcon from "../assets/icons/postgresql.svg";
 import MongodbIcon from "../assets/icons/mongodb.svg";
@@ -28,6 +30,7 @@ import CSharpIcon from "../assets/icons/csharp.svg";
 import PythonIcon from "../assets/icons/python.svg";
 import TypescriptIcon from "../assets/icons/typescript.svg";
 import GitIcon from "../assets/icons/git.svg";
+import GithubIcon from "../assets/icons/github.svg";
 import VercelIcon from "../assets/icons/vercel.svg";
 
 const techStack = [
@@ -36,6 +39,8 @@ const techStack = [
   { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" /> },
   { icon: <DarkModeIcon src={PhpIcon} alt="PHP" className="w-6 h-6" />},
   { icon: <img src={LaravelIcon} alt="PHP" className="w-6 h-6" /> },
+  { icon: <img src={NodejsIcon} alt="Node.js" className="w-6 h-6" />},
+  { icon: <img src={ExpressIcon} alt="Express.js" className="w-6 h-6" />},
   { icon: <img src={MysqlIcon} alt="MySQL" className="w-6 h-6" />},
   // { icon: <img src={PostgresqlIcon} alt="PostgreSQL" className="w-6 h-6" />},
   // { icon: <img src={MongodbIcon} alt="MongoDB" className="w-6 h-6" />},
@@ -59,6 +64,7 @@ const techStack = [
   { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" />},
   { icon: <img src={TypescriptIcon} alt="TypeScript" className="w-6 h-6" />},
   { icon: <img src={GitIcon} alt="Git" className="w-6 h-6" />},
+  { icon: <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-6 h-6" />},
   { icon: <DarkModeIcon src={VercelIcon} alt="Vercel" className="w-6 h-6" />}
 ];
 

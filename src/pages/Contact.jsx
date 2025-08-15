@@ -6,8 +6,8 @@ const Contact = () => {
       <section id="contact" className="py-50 bg-[var(--background-color)] min-h-screen">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
-            <span className="text-[var(--primary-color)]">✉ <mark className='bg-transparent text-[var(--text-color)]'>Let's Connect</mark></span>
-            <span className="w-24 h-1 bg-[var(--primary-color)]"></span>
+            <span className="flex items-center gap-3">Let's <mark className='bg-transparent text-[var(--primary-color)]' >Connect</mark></span>
+            <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
           </h2>
           <p className="text-xl mb-12 text-[var(--text-gray)] max-w-2xl mx-auto">
             I'm always interested in new opportunities and collaborations.

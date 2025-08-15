@@ -56,8 +56,8 @@ const Header = () => {
 	return (
 		<header
 			className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled
-					? "bg-[var(--background-color)] text-[var(--text-color)] shadow-md"
-					: "text-[var(--text-color)]"
+				? "bg-[var(--background-color)] text-[var(--text-color)] shadow-md"
+				: "text-[var(--text-color)]"
 				}`}
 		>
 			<div className="flex justify-between md:justify-around items-center h-16 px-5">
@@ -72,8 +72,8 @@ const Header = () => {
 				{/* Desktop Nav */}
 				<nav
 					className={`hidden md:flex justify-center items-center gap-10 ${scrolled
-							? "text-[var(--text-color)]"
-							: "text-[var(--text-color)]"
+						? "text-[var(--text-color)]"
+						: "text-[var(--text-color)]"
 						}`}
 				>
 					{sections.map((section) => (
@@ -88,10 +88,10 @@ const Header = () => {
 					))}
 
 					<div className="flex justify-center items-center gap-4 border-l border-gray-400 pl-4">
-						<DarkModeToggle />
 						<a href="https://github.com/rastynkhen18" target="_blank" rel="noopener noreferrer">
 							<DarkModeIcon src={GithubIcon} alt="Github" className="w-6 h-6" />
 						</a>
+						<DarkModeToggle />
 					</div>
 				</nav>
 
@@ -102,8 +102,8 @@ const Header = () => {
 							size={28}
 							onClick={() => setIsOpen(false)}
 							className={`cursor-pointer ${scrolled
-									? "text-[var(--text-gray)]"
-									: "text-[var(--text-gray)]"
+								? "text-[var(--text-gray)]"
+								: "text-[var(--text-gray)]"
 								}`}
 						/>
 					) : (
@@ -111,8 +111,8 @@ const Header = () => {
 							size={28}
 							onClick={() => setIsOpen(true)}
 							className={`cursor-pointer ${scrolled
-									? "text-[var(--text-gray)]"
-									: "text-[var(--text-gray)]"
+								? "text-[var(--text-gray)]"
+								: "text-[var(--text-gray)]"
 								}`}
 						/>
 					)}
@@ -123,8 +123,8 @@ const Header = () => {
 			<div
 				ref={mobileMenuRef}
 				className={`absolute z-40 top-16 left-0 w-full ${scrolled
-						? "bg-[var(--container-color)] text-[var(--text-color)]"
-						: "bg-[var(--container-color)] text-[var(--text-color)]"
+					? "bg-[var(--container-color)] text-[var(--text-color)]"
+					: "bg-[var(--container-color)] text-[var(--text-color)]"
 					} flex flex-col items-center gap-6 px-10 py-5 transition-all duration-300 md:hidden ${isOpen
 						? "translate-x-0 opacity-100"
 						: "-translate-x-[-130%] opacity-0 pointer-events-none"

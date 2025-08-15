@@ -13,8 +13,8 @@ const HeroSection = () => {
                                 Rastyn Khen
                             </span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-gray-300 text-center">
-                            Full-Stack Developer & 4th Year IT Student at Bulacan State Univerity - Bustos Campus
+                        <p className="text-xl md:text-2xl text-[var(--text-gray)] text-center">
+                            Full Stack Developer & 4th Year IT Student at Bulacan State Univerity - Bustos Campus
                         </p>
                         <p className="flex justify-center items-center text-lg text-[var(--text-gray)] max-w-4xl leading-relaxed text-center">
                             Passionate about creating modern web and mobile applications with React.js,
