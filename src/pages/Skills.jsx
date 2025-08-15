@@ -126,7 +126,7 @@ const Skills = () => {
       skills: designSkills,
     },
     {
-      title: 'Tools & Deployment',
+      title: 'Version Control & Deployment',
       description: 'Utilizing version control and deployment tools to streamline development workflows.',
       skills: toolsSkills,
     }

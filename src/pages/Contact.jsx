@@ -30,12 +30,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false)
       setSubmitStatus('success')
-      
+
       // Reset form after successful submission
       setFormData({
         name: '',
@@ -43,7 +43,7 @@ const Contact = () => {
         subject: '',
         message: ''
       })
-      
+
       // Clear success message after 5 seconds
       setTimeout(() => {
         setSubmitStatus(null)
@@ -57,7 +57,7 @@ const Contact = () => {
         {/* Decorative elements */}
         <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-[var(--primary-color)]/5 blur-3xl"></div>
         <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[var(--primary-color)]/5 blur-3xl"></div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <FadeInOnView>
             <div className="text-center mb-12">
@@ -65,10 +65,6 @@ const Contact = () => {
                 <span className="flex items-center gap-3">Let's <mark className='bg-transparent text-[var(--primary-color)]'>Connect</mark></span>
                 <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
               </h2>
-              <p className="text-xl text-[var(--text-gray)] max-w-2xl mx-auto">
-                I'm always interested in new opportunities and collaborations.
-                Feel free to reach out if you'd like to work together!
-              </p>
             </div>
           </FadeInOnView>
 
@@ -77,7 +73,7 @@ const Contact = () => {
             <FadeInOnView delay={0.1}>
               <div className="bg-[var(--container-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <h3 className="text-2xl font-bold text-[var(--text-color)] mb-6">Send Me a Message</h3>
-                
+
                 {submitStatus === 'success' && (
                   <div className="mb-6 p-4 bg-green-100 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg">
                     <p className="text-green-700 dark:text-green-300 font-medium">
@@ -85,7 +81,7 @@ const Contact = () => {
                     </p>
                   </div>
                 )}
-                
+
                 <form onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                     <div>
@@ -170,6 +166,10 @@ const Contact = () => {
             <FadeInOnView delay={0.2}>
               <div className="bg-[var(--container-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between">
                 <div>
+                  <p className="text-xl text-[var(--text-gray)] max-w-2xl mx-auto mb-6">
+                    I'm always interested in new opportunities and collaborations.
+                    Feel free to reach out if you'd like to work together!
+                  </p>
                   <h3 className="text-2xl font-bold text-[var(--text-color)] mb-6">Contact Information</h3>
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
@@ -185,7 +185,7 @@ const Contact = () => {
                         </a>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center flex-shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -198,7 +198,7 @@ const Contact = () => {
                         <p className="text-[var(--text-gray)]">Bulacan, Philippines</p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center flex-shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -212,50 +212,50 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Social Media Links integrated into contact info */}
                 <div className="mt-8">
                   <h4 className="text-2xl font-bold text-[var(--text-color)] mb-4">Social Media</h4>
                   <div className="flex flex-wrap items-center gap-4">
-                    <a 
-                      href="https://github.com/rastynkhen18" 
-                      target="_blank" 
+                    <a
+                      href="https://github.com/rastynkhen18"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
                       aria-label="GitHub"
                     >
                       <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-5 h-5" />
                     </a>
-                    <a 
-                      href="https://www.linkedin.com/in/rastyn-khen-acasio-1a6a45375/" 
-                      target="_blank" 
+                    <a
+                      href="https://www.linkedin.com/in/rastyn-khen-acasio-1a6a45375/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
                       aria-label="LinkedIn"
                     >
                       <DarkModeIcon src={LinkedinIcon} alt="LinkedIn" className="w-5 h-5" />
                     </a>
-                    <a 
-                      href="#" 
-                      target="_blank" 
+                    <a
+                      href="#"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
                       aria-label="Facebook"
                     >
                       <DarkModeIcon src={FacebookIcon} alt="Facebook" className="w-5 h-5" />
                     </a>
-                    <a 
-                      href="#" 
-                      target="_blank" 
+                    <a
+                      href="#"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
                       aria-label="Instagram"
                     >
                       <DarkModeIcon src={InstagramIcon} alt="Instagram" className="w-5 h-5" />
                     </a>
-                    <a 
-                      href="#" 
-                      target="_blank" 
+                    <a
+                      href="#"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
                       aria-label="Twitter"
