@@ -5,6 +5,8 @@ import { Menu, X } from "lucide-react";
 import DarkModeToggle from "./DarkModeToggle";
 import DarkModeIcon from "./DarkModeIcon";
 import GithubIcon from "../assets/icons/github.svg"
+import TwitterXIcon from '../assets/icons/twitter-x.svg'
+
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -89,7 +91,15 @@ const Header = () => {
 
 					<div className="flex justify-center items-center gap-4 border-l border-gray-400 pl-4">
 						<a href="https://github.com/rastynkhen18" target="_blank" rel="noopener noreferrer">
-							<DarkModeIcon src={GithubIcon} alt="Github" className="w-6 h-6" />
+							<DarkModeIcon src={GithubIcon} alt="Github" className="w-5 h-5" />
+						</a>
+						<a
+							href="#"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Twitter"
+						>
+							<DarkModeIcon src={TwitterXIcon} alt="Twitter/X" className="w-5 h-5" />
 						</a>
 						<DarkModeToggle />
 					</div>

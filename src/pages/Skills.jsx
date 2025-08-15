@@ -1,6 +1,5 @@
 import React from 'react'
 import DarkModeIcon from '../components/DarkModeIcon'
-import { motion } from 'framer-motion'
 import FadeInOnView from '../components/FadeInOnView'
 
 // Import all icons
@@ -139,15 +138,18 @@ const Skills = () => {
       <section id="skills" className="py-20 bg-[var(--gray-color)] min-h-screen">
         <div className="container mx-auto px-4">
           <FadeInOnView>
-            <div className="text-3xl md:text-5xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
               <span className="flex items-center gap-3">Technical <mark className='bg-transparent text-[var(--primary-color)]'>Skills</mark></span>
               <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
             </div>
           </FadeInOnView>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {skillCategories.map((category, index) => (
-              <FadeInOnView delay={index * 0.1} key={index}>
+              <FadeInOnView 
+                delay={index * 0.1} 
+                key={index} 
+              >
                 <div
                   className="bg-[var(--container-color)] rounded-xl overflow-hidden border border-[var(--border-color)] hover:border-[var(--primary-color)] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 group h-full"
                 >
