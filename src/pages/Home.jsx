@@ -34,14 +34,14 @@ const HeroSection = () => {
                     <div className="flex flex-row justify-center items-center gap-4">
                         <button
                             onClick={() => scrollToSection('projects')}
-                            className="text-sm px-4 py-2 md:px-8 md:py-4 md:text-base bg-[var(--primary-color)] text-[var(--white-color)] rounded-xl transition-all duration-300 font-medium flex items-center justify-center gap-2 shadow-lg cursor-pointer"
+                            className="text-sm px-4 py-2 md:px-8 md:py-4 md:text-base bg-[var(--primary-color)] text-[var(--white-color)] rounded-xl transition-all duration-300 font-medium flex items-center justify-center gap-1 shadow-lg cursor-pointer"
                         >
                             <Code size={18} />
                             Explore Projects
                         </button>
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className="text-sm px-4 py-2 md:px-8 md:py-4 md:text-base bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-300 font-medium flex items-center justify-center gap-2 cursor-pointer"
+                            className="text-sm px-4 py-2 md:px-8 md:py-4 md:text-base bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-300 font-medium flex items-center justify-center gap-1 cursor-pointer"
                         >
                             <SendHorizonal size={18} />
                             Let's Connect
