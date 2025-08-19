@@ -114,7 +114,7 @@ const TechStackSlideshow = () => {
                 </div>
               ))}
             </div>
-            <p className="text-base text-[var(--text-gray)] py-5">Equipped me with the modern development tools that shape my tech stack.</p>
+            <p className="text-base text-[var(--text-gray)] p-5">Equipped me with the modern development tools that shape my tech stack.</p>
           </div>
         </div>
       </div>

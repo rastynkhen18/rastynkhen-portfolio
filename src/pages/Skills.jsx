@@ -134,8 +134,8 @@ const Skills = () => {
 
 
   return (
-      <section id="skills" className="py-20 bg-[var(--gray-color)] min-h-screen">
-        <div className="container mx-auto px-4">
+      <section id="skills" className="py-20 px-5 bg-[var(--gray-color)] min-h-screen">
+        {/* <div className="container mx-auto px-4"> */}
           <FadeInOnView>
             <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
               <span className="flex items-center gap-3">Technical <mark className='bg-transparent text-[var(--primary-color)]'>Skills</mark></span>
@@ -184,7 +184,7 @@ const Skills = () => {
               </FadeInOnView>
             ))}
           </div>
-        </div>
+        {/* </div> */}
       </section>
   )
 }

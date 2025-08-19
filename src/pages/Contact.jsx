@@ -52,12 +52,8 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-[var(--background-color)] min-h-screen relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-[var(--primary-color)]/5 blur-3xl"></div>
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[var(--primary-color)]/5 blur-3xl"></div>
-
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="contact" className="py-20 px-5 bg-[var(--background-color)] min-h-screen">
+      {/* <div className="container mx-auto px-4 relative z-10"> */}
         <FadeInOnView>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
@@ -266,7 +262,7 @@ const Contact = () => {
             </div>
           </FadeInOnView>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   )
 }

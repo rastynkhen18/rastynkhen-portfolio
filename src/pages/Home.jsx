@@ -24,7 +24,7 @@ const HeroSection = () => {
                                 Rastyn Khen
                             </span>
                         </h1>
-                        <p className="max-w-3xl text-center text-base text-[var(--text-gray)]">
+                        <p className="max-w-3xl text-justify md:text-center text-base text-[var(--text-gray)]">
                             Full-Stack Developer and 4th Year IT Student at Bulacan State Univerity - Bustos Campus.
                             Passionate about creating modern web and mobile applications with React.js,
                             Next.js, Tailwind CSS and PostgreSQL. Currently specializing in Web and Mobile App Development.

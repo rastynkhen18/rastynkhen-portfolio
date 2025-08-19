@@ -136,8 +136,8 @@ const techIcons = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-[var(--background-color)] min-h-screen">
-      <div className="container mx-auto px-4">
+    <section id="projects" className="py-20 px-5 bg-[var(--background-color)] min-h-screen">
+      {/* <div className="container mx-auto px-4"> */}
         <FadeInOnView>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
@@ -147,7 +147,7 @@ const Projects = () => {
           </div>
         </FadeInOnView>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-10 max-w-7xl mx-auto sm:px-25">
           {projects.map((project, index) => (
             <FadeInOnView>
               <div key={index} className="bg-[var(--container-color)] rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg hover:shadow-[var(--primary-color)]/20 transition-all duration-300 group">
@@ -204,7 +204,7 @@ const Projects = () => {
             </FadeInOnView>
           ))}
         </div>
-      </div>
+      {/* </div> */}
     </section>
   )
 }
