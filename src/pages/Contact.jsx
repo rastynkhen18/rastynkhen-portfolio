@@ -195,7 +195,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="text-md font-medium text-[var(--text-color)]">Location</h4>
-                        <p className="text-[var(--text-gray)]">Bulacan, Philippines</p>
+                        <p className="text-[var(--text-gray)]">Santa.Maria Bulacan, Philippines</p>
                       </div>
                     </div>
 
@@ -221,7 +221,7 @@ const Contact = () => {
                       href="https://github.com/rastynkhen18"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
+                      className="flex items-center gap-2 transition-all duration-200"
                       aria-label="GitHub"
                     >
                       <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-5 h-5" />
@@ -230,7 +230,7 @@ const Contact = () => {
                       href="https://www.linkedin.com/in/rastyn-khen-acasio-1a6a45375/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
+                      className="flex items-center gap-2 transition-all duration-200"
                       aria-label="LinkedIn"
                     >
                       <DarkModeIcon src={LinkedinIcon} alt="LinkedIn" className="w-5 h-5" />
@@ -239,7 +239,7 @@ const Contact = () => {
                       href="#"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
+                      className="flex items-center gap-2 transition-all duration-200"
                       aria-label="Facebook"
                     >
                       <DarkModeIcon src={FacebookIcon} alt="Facebook" className="w-5 h-5" />
@@ -248,7 +248,7 @@ const Contact = () => {
                       href="#"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
+                      className="flex items-center gap-2 transition-all duration-200"
                       aria-label="Instagram"
                     >
                       <DarkModeIcon src={InstagramIcon} alt="Instagram" className="w-5 h-5" />
@@ -257,7 +257,7 @@ const Contact = () => {
                       href="#"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 p-3 bg-[var(--background-color)] rounded-lg border border-[var(--border-color)] hover:border-[var(--primary-color)] hover:shadow-md transition-all duration-200"
+                      className="flex items-center gap-2 transition-all duration-200"
                       aria-label="Twitter"
                     >
                       <DarkModeIcon src={TwitterXIcon} alt="Twitter/X" className="w-5 h-5" />
