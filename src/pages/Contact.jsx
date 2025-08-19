@@ -6,7 +6,7 @@ import DarkModeIcon from '../components/DarkModeIcon'
 import GithubIcon from '../assets/icons/github.svg'
 import LinkedinIcon from '../assets/icons/linkedin.svg'
 import FacebookIcon from '../assets/icons/facebook.svg'
-import InstagramIcon from '../assets/icons/Instagram.svg'
+import InstagramIcon from '../assets/icons/instagram.svg'
 import TwitterXIcon from '../assets/icons/twitter-x.svg'
 
 const Contact = () => {
