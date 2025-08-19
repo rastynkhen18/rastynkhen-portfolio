@@ -1,0 +1,42 @@
+<!-- filepath: c:\Users\Admin\Documents\portfolio-rastynkhen\public\logo.svg -->
+<svg 
+  width="200" 
+  height="50" 
+  viewBox="0 0 200 50" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Code bracket symbol </> -->
+  <path
+    d="M15 15L5 25L15 35"
+    stroke="#FF6B6B" 
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M35 15L45 25L35 35"
+    stroke="#FF6B6B"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Added backslash -->
+  <path
+    d="M30 15L20 35"
+    stroke="#FF6B6B"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <text 
+    x="55" 
+    y="32" 
+    font-family="monospace"
+    font-weight="bold"
+    font-size="24px"
+    fill="#333333"
+  >
+    rastynkhen.dev
+  </text>
+</svg>

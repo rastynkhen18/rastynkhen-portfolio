@@ -136,20 +136,20 @@ const techIcons = {
 
 const Projects = () => {
   return (
-    <div>
-      <section id="projects" className="py-20 bg-[var(--background-color)] min-h-screen">
-        <div className="container mx-auto px-4">
-          <FadeInOnView>
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
-                <span className="flex items-center gap-3">Featured <mark className='bg-transparent text-[var(--primary-color)]'>Projects</mark></span>
-                <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
-              </h2>
-            </div>
-          </FadeInOnView>
+    <section id="projects" className="py-20 bg-[var(--background-color)] min-h-screen">
+      <div className="container mx-auto px-4">
+        <FadeInOnView>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+              <span className="flex items-center gap-3">Featured <mark className='bg-transparent text-[var(--primary-color)]'>Projects</mark></span>
+              <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
+            </h2>
+          </div>
+        </FadeInOnView>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-            {projects.map((project, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          {projects.map((project, index) => (
+            <FadeInOnView>
               <div key={index} className="bg-[var(--container-color)] rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg hover:shadow-[var(--primary-color)]/20 transition-all duration-300 group">
                 <div className="aspect-video overflow-hidden relative">
                   <img
@@ -158,7 +158,7 @@ const Projects = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4 flex gap-2">
-                    
+
                   </div>
                 </div>
                 <div className="p-6">
@@ -171,8 +171,8 @@ const Projects = () => {
                         className="flex items-center gap-1 px-2 py-1 text-xs font-medium"
                       >
                         {techIcons[tech] && (
-                          tech === 'Github' || tech === 'Vercel' || tech === 'Unity' ? 
-                            <DarkModeIcon src={techIcons[tech]} alt={tech} className="w-4 h-4" /> : 
+                          tech === 'Github' || tech === 'Vercel' || tech === 'Unity' ?
+                            <DarkModeIcon src={techIcons[tech]} alt={tech} className="w-4 h-4" /> :
                             <img src={techIcons[tech]} alt={tech} className="w-4 h-4 border-none" />
                         )}
                         {tech}
@@ -201,11 +201,11 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </FadeInOnView>
+          ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

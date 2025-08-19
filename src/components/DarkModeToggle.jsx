@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react"
 
 const DarkModeToggle = () => {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme")
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-  
-    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-      setIsDark(true)
-      document.documentElement.classList.add("dark")
-    } else {
+    
+    // Default to dark mode if no theme is saved
+    if (savedTheme === "light") {
       setIsDark(false)
       document.documentElement.classList.remove("dark")
+    } else {
+      setIsDark(true)
+      document.documentElement.classList.add("dark")
+      localStorage.setItem("theme", "dark")
     }
   }, [])
   
-
   const toggleDarkMode = () => {
     const newDarkMode = !isDark
     setIsDark(newDarkMode)
@@ -33,15 +33,14 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="relative inline-flex items-center justify-center w-6 h-6 transition-all duration-200"
+      className="relative inline-flex items-center justify-center w-5 h-5 cursor-pointer"
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       title={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
       <div className="relative w-6 h-6">
         {/* Sun Icon */}
         <svg
-          className={`absolute inset-0 w-5 h-5 transition-all duration-300 cursor-pointer ${isDark ? "opacity-0 rotate-90 scale-0" : "opacity-100 rotate-0 scale-100"
-            }`}
+          className={`absolute inset-0 w-5 h-5 ${isDark ? "block" : "hidden"}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -54,8 +53,7 @@ const DarkModeToggle = () => {
 
          {/* Moon Icon */}
          <svg
-          className={`absolute inset-0 w-5 h-5 transition-all duration-300 cursor-pointer ${isDark ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-0"
-            }`}
+          className={`absolute inset-0 w-5 h-5 ${isDark ? "hidden" : "block"}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >

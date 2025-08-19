@@ -134,7 +134,6 @@ const Skills = () => {
 
 
   return (
-    <div>
       <section id="skills" className="py-20 bg-[var(--gray-color)] min-h-screen">
         <div className="container mx-auto px-4">
           <FadeInOnView>
@@ -187,7 +186,6 @@ const Skills = () => {
           </div>
         </div>
       </section>
-    </div>
   )
 }
 

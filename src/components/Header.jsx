@@ -6,6 +6,7 @@ import DarkModeToggle from "./DarkModeToggle";
 import DarkModeIcon from "./DarkModeIcon";
 import GithubIcon from "../assets/icons/github.svg"
 import TwitterXIcon from '../assets/icons/twitter-x.svg'
+import Logo from '../components/Logo'
 
 
 const Header = () => {
@@ -65,9 +66,10 @@ const Header = () => {
 			<div className="flex justify-between md:justify-around items-center h-16 px-5">
 				<div>
 					<Link to="/" reloadDocument>
-						<h1 className="text-[var(--primary-color)] cursor-pointer">
+						<Logo />
+						{/* <h1 className="text-[var(--primary-color)] cursor-pointer">
 							rastynkhen.dev
-						</h1>
+						</h1> */}
 					</Link>
 				</div>
 
@@ -94,7 +96,7 @@ const Header = () => {
 							<DarkModeIcon src={GithubIcon} alt="Github" className="w-5 h-5" />
 						</a>
 						<a
-							href="#"
+							href="https://x.com/rastynkhen_18"
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Twitter"
@@ -154,6 +156,20 @@ const Header = () => {
 						{section.charAt(0).toUpperCase() + section.slice(1)}
 					</HashLink>
 				))}
+				<div className="flex justify-center items-center gap-4">
+					<a href="https://github.com/rastynkhen18" target="_blank" rel="noopener noreferrer">
+						<DarkModeIcon src={GithubIcon} alt="Github" className="w-5 h-5" />
+					</a>
+					<a
+						href="https://x.com/rastynkhen_18"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Twitter"
+					>
+						<DarkModeIcon src={TwitterXIcon} alt="Twitter/X" className="w-5 h-5" />
+					</a>
+					<DarkModeToggle />
+				</div>
 			</div>
 		</header>
 	);

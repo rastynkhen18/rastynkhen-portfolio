@@ -11,17 +11,16 @@ import FadeInOnView from '../components/FadeInOnView'
 
 const About = () => {
   return (
-    <div>
-      <section id="about" className="py-20 bg-[var(--gray-color)] min-h-screen">
-        <div className="container mx-auto px-4">
-          <FadeInOnView>
-            <div className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
-              <span className="flex items-center gap-3">About <mark className='bg-transparent text-[var(--primary-color)]' >Me</mark></span>
-              <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
-            </div>
-          </FadeInOnView>
+    <section id="about" className="py-20 bg-[var(--gray-color)] min-h-screen">
+      <div className="container mx-auto px-4">
+        <FadeInOnView>
+          <div className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <span className="flex items-center gap-3">About <mark className='bg-transparent text-[var(--primary-color)]' >Me</mark></span>
+            <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
+          </div>
+        </FadeInOnView>
 
-
+        <FadeInOnView>
           <div className="flex justify-center items-center flex-wrap gap-8 max-w-5xl mx-auto">
             {/* Personal Info */}
             <div className="bg-[var(--container-color)] border border-[var(--border-color)] rounded-2xl p-8 w-auto h-auto sm:w-145 sm:h-100">
@@ -43,19 +42,19 @@ const About = () => {
                 <div className="pt-2 border-t border-[var(--border-color)] mt-2">
                   <h4 className="text-lg font-medium text-[var(--text-color)] mb-2">Connect with me</h4>
                   <div className="flex space-x-4">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.facebook.com/rastynkhen.acasio.18" target="_blank" rel="noopener noreferrer"
                       className="social-icon-link" aria-label="Facebook">
                       <DarkModeIcon src={FacebookIcon} alt="Facebook" className="w-5 h-5" />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                    <a href="https://x.com/rastynkhen_18" target="_blank" rel="noopener noreferrer"
                       className="social-icon-link" aria-label="Twitter/X">
                       <DarkModeIcon src={TwitterXIcon} alt="Twitter/X" className="w-5 h-5" />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/khennnn_18/" target="_blank" rel="noopener noreferrer"
                       className="social-icon-link" aria-label="Instagram">
                       <DarkModeIcon src={InstagramIcon} alt="Instagram" className="w-5 h-5" />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.linkedin.com/in/rastyn-khen-acasio-1a6a45375/" target="_blank" rel="noopener noreferrer"
                       className="social-icon-link" aria-label="LinkedIn">
                       <DarkModeIcon src={LinkedInIcon} alt="LinkedIn" className="w-5 h-5" />
                     </a>
@@ -77,9 +76,9 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </FadeInOnView>
+      </div>
+    </section>
   )
 }
 

@@ -7,7 +7,6 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import FadeInOnView from './components/FadeInOnView';
 
 
 const App = () => {
@@ -17,33 +16,23 @@ const App = () => {
         <Header />
 
         <div id="home">
-          <FadeInOnView>
-            <Home />
-          </FadeInOnView>
+          <Home />
         </div>
 
         <div id="about">
-          <FadeInOnView>
-            <About />
-          </FadeInOnView>
+          <About />
         </div>
 
         <div id='skills'>
-          <FadeInOnView>
-            <Skills />
-          </FadeInOnView>
+          <Skills />
         </div>
 
         <div id='projects'>
-          <FadeInOnView>
-            <Projects />
-          </FadeInOnView>
+          <Projects />
         </div>
 
         <div id='contact'>
-          <FadeInOnView>
-            <Contact />
-          </FadeInOnView>
+          <Contact />
         </div>
 
         <Footer />
