@@ -52,7 +52,7 @@ import UnityEndlessRunner from '../assets/projects/untiy-EndlessRunnerAot.jpg'
 const projects = [
   {
     title: 'Digo Traders',
-    description: 'A modern landing page for a trading client. Built with React.js and Tailwind CSS. Features product listings, user authentication, and responsive design.',
+    description: 'A modern landing page for one of my clients. Built with React.js and Tailwind CSS.',
     technologies: ['React.js', 'Tailwind CSS', 'Git', 'Github', 'Vercel'],
     image: DigoTraders,
     liveUrl: 'https://digo-traders.vercel.app/',
@@ -91,7 +91,7 @@ const projects = [
     githubUrl: 'https://github.com/rastynkhen18/unity-flappy-angry-black-bird',
   },
   {
-    title: 'Unity Endless Runner',
+    title: 'Unity Endless Runner Attack on Titan',
     description: 'An endless runner game built in Unity. Includes multiple obstacles and scoring system.',
     technologies: ['Unity', 'C#'],
     image: UnityEndlessRunner,
