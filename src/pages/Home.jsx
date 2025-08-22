@@ -14,7 +14,7 @@ const HeroSection = () => {
     }
 
     return (
-        <section id="home" className="py-40 bg-[var(--black-color)] h-screen">
+        <section id="home" className="py-40 bg-[var(--black-color)] min-h-screen">
             <div className="flex justify-center items-center p-5">
                 <div className="space-y-8">
                     <div className="space-y-6">
