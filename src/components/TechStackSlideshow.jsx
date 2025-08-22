@@ -73,7 +73,7 @@ const TechStackSlideshow = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="w-full md:w-[70%] flex flex-col justify-center items-center text-center bg-[var(--black-color)] py-10">
+      <div className="w-full md:w-[70%] flex flex-col justify-center items-center text-center bg-[var(--black-color)] py-5">
         <style>{`
         .slideshow-viewport {
           width: 100%;
