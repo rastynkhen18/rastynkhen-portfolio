@@ -134,7 +134,7 @@ const Skills = () => {
 
 
   return (
-      <section id="skills" className="py-20 px-5 bg-[var(--gray-color)] min-h-screen">
+      <section id="skills" className="py-16 px-6 bg-[var(--gray-color)]">
         {/* <div className="container mx-auto px-4"> */}
           <FadeInOnView>
             <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
@@ -150,7 +150,7 @@ const Skills = () => {
                 key={index} 
               >
                 <div
-                  className="bg-[var(--container-color)] rounded-xl overflow-hidden border border-[var(--border-color)] hover:border-[var(--primary-color)] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 group h-full"
+                  className="bg-[var(--container-color)] rounded-xl overflow-hidden border border-[var(--border-color)] transition-all duration-500 hover:-translate-y-2 group h-full"
                 >
                   <div className={`h-1.5 bg-gradient-to-r ${category.gradient}`}></div>
 

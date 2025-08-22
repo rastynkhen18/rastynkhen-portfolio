@@ -136,7 +136,7 @@ const techIcons = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-5 bg-[var(--background-color)] min-h-screen">
+    <section id="projects" className="py-16 px-6 bg-[var(--background-color)]">
       {/* <div className="container mx-auto px-4"> */}
         <FadeInOnView>
           <div className="text-center mb-12">
@@ -147,7 +147,7 @@ const Projects = () => {
           </div>
         </FadeInOnView>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-10 max-w-7xl mx-auto sm:px-25">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-10 max-w-7xl mx-auto sm:px-25">
           {projects.map((project, index) => (
             <FadeInOnView>
               <div key={index} className="bg-[var(--container-color)] rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg hover:shadow-[var(--primary-color)]/20 transition-all duration-300 group">
@@ -184,7 +184,7 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 bg-[var(--primary-color)] text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md hover:bg-[var(--primary-color)]"
+                      className="flex-1 px-4 py-2 bg-[var(--primary-color)] text-white rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md hover:bg-[var(--primary-color)]"
                     >
                       <span>▶</span>
                       Live Demo
@@ -193,7 +193,7 @@ const Projects = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md hover:border-[var(--primary-color)]"
+                      className="flex-1 px-4 py-2 bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md"
                     >
                       <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-5 h-5" />
                       GitHub

@@ -11,7 +11,7 @@ import FadeInOnView from '../components/FadeInOnView'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-5 bg-[var(--gray-color)] min-h-screen">
+    <section id="about" className="py-16 px-6 bg-[var(--gray-color)]">
       {/* <div className="container mx-auto px-4"> */}
         <FadeInOnView>
           <div className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
@@ -66,7 +66,7 @@ const About = () => {
             {/* Profile Picture */}
             <div className="flex flex-col justify-center items-center">
               <div>
-                <div className="w-auto h-auto sm:w-100 sm:h-100 rounded-xl overflow-hidden shadow-2xl">
+                <div className="w-auto h-auto sm:w-100 sm:h-100 rounded-xl overflow-hidden shadow-lg">
                   <img
                     src={Profilepic}
                     alt="Rastyn Khen Ong Acasio"

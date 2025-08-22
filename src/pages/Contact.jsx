@@ -72,7 +72,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 px-5 bg-[var(--background-color)] min-h-screen">
+    <section id="contact" className="py-16 px-6 bg-[var(--background-color)]">
       <FadeInOnView>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
@@ -175,7 +175,6 @@ const Contact = () => {
                   </>
                 ) : (
                   <>
-                    <span>✉</span>
                     Send Message
                   </>
                 )}
