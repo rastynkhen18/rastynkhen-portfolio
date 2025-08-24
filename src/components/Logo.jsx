@@ -45,7 +45,7 @@ const Logo = ({ className = "" }) => {
           fill: 'currentColor'
         }}
       >
-        rastynkhen.dev
+        rastynkhen
       </text>
     </svg>
   );
