@@ -85,7 +85,7 @@ const Contact = () => {
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {/* Contact Form */}
         <FadeInOnView delay={0.1}>
-          <div className="bg-[var(--container-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-[var(--card-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow duration-300">
             <h3 className="text-2xl font-bold text-[var(--text-color)] mb-6">Send Me a Message</h3>
 
             {submitStatus === 'success' && (
@@ -185,7 +185,7 @@ const Contact = () => {
 
         {/* Contact Information - unchanged */}
         <FadeInOnView delay={0.2}>
-          <div className="bg-[var(--container-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between">
+          <div className="bg-[var(--card-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col justify-between">
             {/* ...existing code... */}
             <div>
               <p className="text-xl text-[var(--text-gray)] max-w-2xl mx-auto mb-10">

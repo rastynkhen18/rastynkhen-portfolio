@@ -22,6 +22,7 @@ import UnityIcon from "../assets/icons/unity.svg";
 import ReactNativeIcon from "../assets/icons/react.svg";
 import FlutterIcon from "../assets/icons/flutter.svg";
 import FigmaIcon from "../assets/icons/figma.svg";
+import CanvaIcon from '../assets/icons/canva.svg'
 import PhotoshopIcon from "../assets/icons/adobe-photoshop.svg";
 import PremiereIcon from "../assets/icons/adobe-illustrator.svg";
 import CppIcon from "../assets/icons/cpp.svg";
@@ -55,6 +56,7 @@ const techStack = [
   { icon: <img src={ReactNativeIcon} alt="React Native" className="w-6 h-6" />},
   { icon: <img src={FlutterIcon} alt="Flutter" className="w-6 h-6" />},
   { icon: <img src={FigmaIcon} alt="Figma" className="w-6 h-6" />},
+  { icon: <img src={CanvaIcon} alt="Canva" className="w-6 h-6" />},
   { icon: <img src={PhotoshopIcon} alt="Adobe Photoshop" className="w-6 h-6" />},
   { icon: <img src={PremiereIcon} alt="Adobe Illustrator" className="w-6 h-6" />},
   { icon: <img src={CppIcon} alt="C++" className="w-6 h-6" />},

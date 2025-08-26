@@ -39,7 +39,7 @@ const HeroSection = () => {
                         </button>
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className="text-sm px-4 py-2 md:px-8 md:py-4 md:text-base bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 font-medium flex items-center justify-center gap-1 cursor-pointer"
+                            className="text-sm px-4 py-2 md:px-8 md:py-4 md:text-base bg-[var(--card-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 font-medium flex items-center justify-center gap-1 cursor-pointer"
                         >
                             {/* <SendHorizonal size={18} /> */}
                             Let's Connect

@@ -31,6 +31,7 @@ import AndroidIcon from '../assets/icons/android.svg'
 import FlutterIcon from '../assets/icons/flutter.svg'
 
 import FigmaIcon from '../assets/icons/figma.svg'
+import CanvaIcon from '../assets/icons/canva.svg'
 import PhotoshopIcon from '../assets/icons/adobe-photoshop.svg'
 import IllustratorIcon from '../assets/icons/adobe-illustrator.svg'
 
@@ -78,6 +79,7 @@ const Skills = () => {
 
   const designSkills = [
     { name: 'Figma', icon: FigmaIcon },
+    { name: 'Canva', icon: CanvaIcon},
     { name: 'Adobe Photoshop', icon: PhotoshopIcon },
     { name: 'Adobe Illustrator', icon: IllustratorIcon }
   ]
@@ -150,7 +152,7 @@ const Skills = () => {
                 key={index} 
               >
                 <div
-                  className="bg-[var(--container-color)] rounded-xl overflow-hidden border border-[var(--border-color)] transition-all duration-500 hover:-translate-y-2 group h-full"
+                  className="bg-[var(--card-color)] rounded-xl overflow-hidden border border-[var(--border-color)] transition-all duration-500 hover:-translate-y-2 group h-full"
                 >
                   <div className={`h-1.5 bg-gradient-to-r ${category.gradient}`}></div>
 

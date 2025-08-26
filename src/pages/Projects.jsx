@@ -150,7 +150,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-10 max-w-7xl mx-auto sm:px-25">
           {projects.map((project, index) => (
             <FadeInOnView>
-              <div key={index} className="bg-[var(--container-color)] rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg hover:shadow-[var(--primary-color)]/20 transition-all duration-300 group">
+              <div key={index} className="bg-[var(--card-color)] rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg hover:shadow-[var(--primary-color)]/20 transition-all duration-300 group">
                 <div className="aspect-video overflow-hidden relative">
                   <img
                     src={project.image}
@@ -193,7 +193,7 @@ const Projects = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md"
+                      className="flex-1 px-4 py-2 bg-[var(--card-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md"
                     >
                       <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-5 h-5" />
                       GitHub
