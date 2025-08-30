@@ -151,7 +151,7 @@ const Skills = () => {
 
 
   return (
-      <section id="skills" className="py-16 px-6 bg-[var(--gray-color)]">
+      <section id="skills" className="py-20 bg-[var(--gray-color)]">
         <div className="container mx-auto px-4">
           <FadeInOnView>
             <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
@@ -174,7 +174,7 @@ const Skills = () => {
                   <div className="p-6">
                     <div className="flex items-start flex-col gap-4 mb-4">
                       <h3 className="text-xl font-bold text-[var(--text-color)]">{category.title}</h3>
-                      <p className="text-[var(--text-color)] text-sm">{category.description}</p>
+                      <p className="text-[var(--text-gray)] text-sm">{category.description}</p>
                     </div>
 
                     <div className="flex items-center gap-4">

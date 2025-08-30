@@ -162,7 +162,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-[var(--primary-color)] mb-2">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-[var(--white-color)] mb-2">{project.title}</h3>
                   <p className="text-[var(--text-gray)] mb-4 text-sm leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (

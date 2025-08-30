@@ -131,7 +131,7 @@ const Header = () => {
 			{/* Mobile Menu */}
 			<div
 				ref={mobileMenuRef}
-				className={`absolute z-40 top-16 left-0 w-full ${scrolled
+				className={`absolute z-40 top-16 left-0 w-full h-screen ${scrolled
 					? "bg-[var(--card-color)] text-[var(--text-color)]"
 					: "bg-[var(--card-color)] text-[var(--text-color)]"
 					} flex flex-col justify-start items-center gap-6 px-10 py-5 text-base transition-all duration-300 md:hidden ${isOpen
