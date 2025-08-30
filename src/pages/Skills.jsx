@@ -95,6 +95,11 @@ const Skills = () => {
     { name: 'Vercel', icon: VercelIcon, useDarkMode: true }
   ]
 
+  const cybersecuritySkills = [
+    { name: 'Cisco Packet Tracer', icon: CppIcon },  // Using CppIcon as a temporary placeholder
+    { name: 'Burp Suite', icon: JavaIcon }          // Using JavaIcon as a temporary placeholder
+  ]
+
 
   const skillCategories = [
     {
@@ -128,6 +133,11 @@ const Skills = () => {
       skills: designSkills,
     },
     {
+      title: 'Cybersecurity & Networking',
+      description: 'Implementing security measures and network solutions to protect systems and analyze vulnerabilities.',
+      skills: cybersecuritySkills,
+    },
+    {
       title: 'Version Control & Deployment',
       description: 'Utilizing version control and deployment tools to streamline development workflows.',
       skills: toolsSkills,
@@ -136,8 +146,8 @@ const Skills = () => {
 
 
   return (
-      <section id="skills" className="py-16 px-6 bg-[var(--gray-color)]">
-        {/* <div className="container mx-auto px-4"> */}
+      <section id="skills" className="py-20 bg-[var(--gray-color)]">
+        <div className="container mx-auto px-4">
           <FadeInOnView>
             <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
               <span className="flex items-center gap-3">Technical <mark className='bg-transparent text-[var(--primary-color)]'>Skills</mark></span>
@@ -186,7 +196,7 @@ const Skills = () => {
               </FadeInOnView>
             ))}
           </div>
-        {/* </div> */}
+        </div>
       </section>
   )
 }

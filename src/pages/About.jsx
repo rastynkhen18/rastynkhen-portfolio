@@ -11,8 +11,8 @@ import FadeInOnView from '../components/FadeInOnView'
 
 const About = () => {
   return (
-    <section id="about" className="py-16 px-6 bg-[var(--gray-color)]">
-      {/* <div className="container mx-auto px-4"> */}
+    <section id="about" className="py-20 bg-[var(--gray-color)]">
+      <div className="container mx-auto px-4">
         <FadeInOnView>
           <div className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
             <span className="flex items-center gap-3">About <mark className='bg-transparent text-[var(--primary-color)]' >Me</mark></span>
@@ -21,7 +21,7 @@ const About = () => {
         </FadeInOnView>
 
         <FadeInOnView>
-          <div className="flex justify-center items-center flex-wrap gap-8 max-w-5xl mx-auto">
+          <div className="flex justify-center items-center flex-wrap gap-6 max-w-5xl mx-auto">
             {/* Personal Info */}
             <div className="bg-[var(--card-color)] border border-[var(--border-color)] rounded-2xl p-8 w-auto h-auto sm:w-145 sm:h-100">
               <h3 className="text-2xl font-semibold text-[var(--text-color)] mb-6">
@@ -77,7 +77,7 @@ const About = () => {
             </div>
           </div>
         </FadeInOnView>
-      {/* </div> */}
+      </div>
     </section>
   )
 }

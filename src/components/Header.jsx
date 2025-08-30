@@ -60,16 +60,13 @@ const Header = () => {
 		<header
 			className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled
 				? "bg-[var(--background-color)] text-[var(--text-color)] shadow-md"
-				: "text-[var(--text-color)]"
+				: "bg-[var(--background-color)] text-[var(--text-color)]"
 				}`}
 		>
-			<div className="flex justify-between md:justify-around items-center h-16 px-5">
+			<div className="flex justify-between md:justify-around items-center px-8 py-4">
 				<div>
 					<Link to="/" reloadDocument>
 						<Logo />
-						{/* <h1 className="text-[var(--primary-color)] cursor-pointer">
-							rastynkhen.dev
-						</h1> */}
 					</Link>
 				</div>
 
@@ -91,7 +88,7 @@ const Header = () => {
 						</HashLink>
 					))}
 
-					<div className="flex justify-center items-center gap-4 border-l border-gray-400 pl-4">
+					<div className="flex justify-center items-center gap-4">
 						<a href="https://github.com/rastynkhen18" target="_blank" rel="noopener noreferrer">
 							<DarkModeIcon src={GithubIcon} alt="Github" className="w-5 h-5" />
 						</a>
