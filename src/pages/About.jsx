@@ -64,15 +64,13 @@ const About = () => {
             </div>
 
             {/* Profile Picture */}
-            <div className="flex flex-col justify-center items-center">
-              <div>
-                <div className="w-auto h-auto sm:w-100 sm:h-100 rounded-xl overflow-hidden shadow-lg">
-                  <img
-                    src={Profilepic}
-                    alt="Rastyn Khen Ong Acasio"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            <div>
+              <div className="w-full h-auto sm:w-100 sm:h-100 rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src={Profilepic}
+                  alt="Rastyn Khen Ong Acasio"
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
           </div>
