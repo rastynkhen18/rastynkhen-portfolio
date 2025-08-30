@@ -147,7 +147,7 @@ const Projects = () => {
           </div>
         </FadeInOnView>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <FadeInOnView>
               <div key={index} className="bg-[var(--card-color)] rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg hover:shadow-[var(--primary-color)]/20 transition-all duration-300 group">

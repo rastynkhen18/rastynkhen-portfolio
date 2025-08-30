@@ -30,16 +30,21 @@ import ReactNativeIcon from '../assets/icons/react.svg'
 import AndroidIcon from '../assets/icons/android.svg'
 import FlutterIcon from '../assets/icons/flutter.svg'
 
+import UnityIcon from '../assets/icons/unity.svg'
+
 import FigmaIcon from '../assets/icons/figma.svg'
 import CanvaIcon from '../assets/icons/canva.svg'
 import PhotoshopIcon from '../assets/icons/adobe-photoshop.svg'
 import IllustratorIcon from '../assets/icons/adobe-illustrator.svg'
 
-import UnityIcon from '../assets/icons/unity.svg'
+import CiscoIcon from '../assets/icons/cisco.svg'
+import BurpSuiteIcon from '../assets/icons/burpsuite.svg'
 
 import GitIcon from '../assets/icons/git.svg'
 import GithubIcon from '../assets/icons/github.svg'
 import VercelIcon from '../assets/icons/vercel.svg'
+
+
 
 const Skills = () => {
   const frontendSkills = [
@@ -95,6 +100,11 @@ const Skills = () => {
     { name: 'Vercel', icon: VercelIcon, useDarkMode: true }
   ]
 
+  const securitySkills = [
+    { name: 'Cisco Networking', icon: CiscoIcon, useDarkMode: true },
+    { name: 'Burp Suite', icon: BurpSuiteIcon }
+  ]
+
 
   const skillCategories = [
     {
@@ -128,6 +138,11 @@ const Skills = () => {
       skills: designSkills,
     },
     {
+      title: 'Networking & Cybersecurity',
+      description: 'Implementing secure network infrastructures and performing security assessments.',
+      skills: securitySkills,
+    },
+    {
       title: 'Version Control & Deployment',
       description: 'Utilizing version control and deployment tools to streamline development workflows.',
       skills: toolsSkills,
@@ -137,7 +152,7 @@ const Skills = () => {
 
   return (
       <section id="skills" className="py-16 px-6 bg-[var(--gray-color)]">
-        {/* <div className="container mx-auto px-4"> */}
+        <div className="container mx-auto px-4">
           <FadeInOnView>
             <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
               <span className="flex items-center gap-3">Technical <mark className='bg-transparent text-[var(--primary-color)]'>Skills</mark></span>
@@ -145,7 +160,7 @@ const Skills = () => {
             </div>
           </FadeInOnView>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {skillCategories.map((category, index) => (
               <FadeInOnView 
                 delay={index * 0.1} 
@@ -186,7 +201,7 @@ const Skills = () => {
               </FadeInOnView>
             ))}
           </div>
-        {/* </div> */}
+        </div>
       </section>
   )
 }
