@@ -125,7 +125,7 @@ const Skills = () => {
       skills: backendSkills,
     },
     {
-      title: 'Database Managemnt',
+      title: 'Database Management',
       description: 'Designing and implementing efficient data storage and retrieval systems.',
       skills: databaseSkills,
     },
