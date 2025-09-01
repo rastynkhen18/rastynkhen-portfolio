@@ -27,7 +27,7 @@ import MongodbIcon from '../assets/icons/mongodb.svg'
 import FirebaseIcon from '../assets/icons/firebase.svg'
 
 import ReactNativeIcon from '../assets/icons/react.svg'
-import AndroidIcon from '../assets/icons/android.svg'
+import AndroidIcon from '../assets/icons/androidstudio.png'
 import FlutterIcon from '../assets/icons/flutter.svg'
 
 import FigmaIcon from '../assets/icons/figma.svg'
@@ -41,8 +41,8 @@ import GithubIcon from '../assets/icons/github.svg'
 import VercelIcon from '../assets/icons/vercel.svg'
 
 //Import Projects
-import DigoTraders from '../assets/projects/digo-traders.png'  //Using Reacts.js, Tailwind Css, Git, Github and Vercel
-import ButFirstCoffee from '../assets/projects/butfirstcoffee.png' //Using Html, Css, Js, Php, Mysql, Git, Github and Vercel
+import DigoTraders from '../assets/projects/digo-traders.png'
+import ButFirstCoffee from '../assets/projects/butfirstcoffee.png'
 import AndroidStudioCalculator from '../assets/projects/android-studioCalculator.jpg'
 import AndroidStudioCruds from '../assets/projects/android-studioCruds.jpg'
 import UnityFlappyAngryBlackBird from '../assets/projects/unity-flappyAngryBlackBird.jpg'
@@ -69,7 +69,7 @@ const projects = [
   {
     title: 'Android Studio Calculator',
     description: 'A simple calculator app built in Android Studio using Java. Supports basic arithmetic operations.',
-    technologies: ['Android', 'Java'],
+    technologies: ['Android Studio', 'Java'],
     image: AndroidStudioCalculator,
     liveUrl: '#',
     githubUrl: 'https://github.com/rastynkhen18/android-calculator',
@@ -77,7 +77,7 @@ const projects = [
   {
     title: 'Android Studio CRUDs',
     description: 'CRUD application for Android using Java. Allows users to create, read, update, and delete records.',
-    technologies: ['Android', 'Java'],
+    technologies: ['Android Studio', 'Java'],
     image: AndroidStudioCruds,
     liveUrl: '#',
     githubUrl: 'https://github.com/rastynkhen18/android-cruds',
