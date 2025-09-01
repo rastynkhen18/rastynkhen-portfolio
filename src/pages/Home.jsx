@@ -26,7 +26,7 @@ const HeroSection = () => {
                                 Rastyn Khen
                             </span>
                         </h1>
-                        <p className="max-w-3xl text-[var(--text-gray)] text-justify text-sm md:text-center md:text-base">
+                        <p className="max-w-3xl text-[var(--text-gray)] text-justify text-xs md:text-center md:text-base">
                             Full-Stack Developer and 4th Year IT Student at Bulacan State Univerity - Bustos Campus.
                             Passionate about creating modern web and mobile applications with React.js,
                             Next.js, Tailwind CSS and PostgreSQL. Currently specializing in Web and Mobile App Development.
@@ -35,7 +35,7 @@ const HeroSection = () => {
                         <div className="flex flex-row justify-center items-center gap-3">
                             <button
                                 onClick={() => scrollToSection('projects')}
-                                className="text-xs md:text-base px-4 py-2 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white rounded-lg transition-all duration-300 flex items-center justify-center gap-1 shadow-lg cursor-pointer"
+                                className="text-sm md:text-base px-4 py-2 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white rounded-lg transition-all duration-300 flex items-center justify-center gap-1 shadow-lg cursor-pointer"
                             >
                                 {/* <Code size={18} /> */}
                                 Get Started
@@ -51,7 +51,7 @@ const HeroSection = () => {
                                 href="https://github.com/rastynkhen18"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs md:text-base px-4 py-2 bg-[var(--card-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
+                                className="text-sm md:text-base px-4 py-2 bg-[var(--card-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
                             >
                                 <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-4 h-4" />
                                 GitHub

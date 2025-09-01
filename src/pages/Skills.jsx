@@ -12,6 +12,10 @@ import NextjsIcon from '../assets/icons/nextjs.svg'
 import TailwindIcon from '../assets/icons/tailwindcss.svg'
 import BootstrapIcon from '../assets/icons/bootstrap.svg'
 
+import ReactNativeIcon from '../assets/icons/react.svg'
+import AndroidIcon from '../assets/icons/androidstudio.png'
+import FlutterIcon from '../assets/icons/flutter.svg'
+
 import PhpIcon from '../assets/icons/php.svg'
 import LaravelIcon from '../assets/icons/laravel.svg'
 import NodejsIcon from '../assets/icons/nodejs.svg'
@@ -25,10 +29,6 @@ import MysqlIcon from '../assets/icons/mysql.svg'
 import SupabaseIcon from '../assets/icons/supabase.svg'
 import MongodbIcon from '../assets/icons/mongodb.svg'
 import FirebaseIcon from '../assets/icons/firebase.svg'
-
-import ReactNativeIcon from '../assets/icons/react.svg'
-import AndroidIcon from '../assets/icons/android.svg'
-import FlutterIcon from '../assets/icons/flutter.svg'
 
 import UnityIcon from '../assets/icons/unity.svg'
 
@@ -78,6 +78,7 @@ const Skills = () => {
 
   const mobileSkills = [
     { name: 'Android Studio', icon: AndroidIcon },
+    { name: 'Java', icon: JavaIcon },
     { name: 'React Native', icon: ReactNativeIcon },
     { name: 'Tailwind CSS', icon: TailwindIcon }
     // { name: 'Flutter', icon: FlutterIcon }
@@ -85,7 +86,7 @@ const Skills = () => {
 
   const designSkills = [
     { name: 'Figma', icon: FigmaIcon },
-    { name: 'Canva', icon: CanvaIcon},
+    { name: 'Canva', icon: CanvaIcon },
     { name: 'Adobe Photoshop', icon: PhotoshopIcon },
     { name: 'Adobe Illustrator', icon: IllustratorIcon }
   ]
@@ -152,58 +153,58 @@ const Skills = () => {
 
 
   return (
-      <section id="skills" className="py-20 bg-[var(--gray-color)]">
-        <div className="container mx-auto px-4">
-          <FadeInOnView>
-            <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
-              <span className="flex items-center gap-3">Technical <mark className='bg-transparent text-[var(--primary-color)]'>Skills</mark></span>
-              <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
-            </div>
-          </FadeInOnView>
+    <section id="skills" className="py-20 bg-[var(--gray-color)]">
+      <div className="container mx-auto px-4">
+        <FadeInOnView>
+          <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <span className="flex items-center gap-3">Technical <mark className='bg-transparent text-[var(--primary-color)]'>Skills</mark></span>
+            <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)] rounded-full"></span>
+          </div>
+        </FadeInOnView>
 
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {skillCategories.map((category, index) => (
-              <FadeInOnView 
-                delay={index * 0.1} 
-                key={index} 
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {skillCategories.map((category, index) => (
+            <FadeInOnView
+              delay={index * 0.1}
+              key={index}
+            >
+              <div
+                className="bg-[var(--card-color)] rounded-xl overflow-hidden border border-[var(--border-color)] transition-all duration-500 hover:-translate-y-2 group h-full"
               >
-                <div
-                  className="bg-[var(--card-color)] rounded-xl overflow-hidden border border-[var(--border-color)] transition-all duration-500 hover:-translate-y-2 group h-full"
-                >
-                  <div className={`h-1.5 bg-gradient-to-r ${category.gradient}`}></div>
+                <div className={`h-1.5 bg-gradient-to-r ${category.gradient}`}></div>
 
-                  <div className="p-6">
-                    <div className="flex items-start flex-col gap-4 mb-4">
-                      <h3 className="text-xl font-bold text-[var(--text-color)]">{category.title}</h3>
-                      <p className="text-[var(--text-gray)] text-sm">{category.description}</p>
-                    </div>
+                <div className="p-6">
+                  <div className="flex items-start flex-col gap-4 mb-4">
+                    <h3 className="text-xl font-bold text-[var(--text-color)]">{category.title}</h3>
+                    <p className="text-[var(--text-gray)] text-sm">{category.description}</p>
+                  </div>
 
-                    <div className="flex items-center gap-2">
-                      {category.skills.map((skill) => (
-                        <div
-                          className={`flex items-center rounded-lg text-sm font-medium transition-all duration-300`}
-                        >
-                          <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center">
-                            {skill.useDarkMode ? (
-                              <DarkModeIcon src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
-                            ) : (
-                              <img
-                                src={skill.icon}
-                                alt={skill.name}
-                                className="w-full h-full object-contain"
-                              />
-                            )}
-                          </div>
+                  <div className="flex items-center gap-2">
+                    {category.skills.map((skill) => (
+                      <div
+                        className={`flex items-center rounded-lg text-sm font-medium transition-all duration-300`}
+                      >
+                        <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center">
+                          {skill.useDarkMode ? (
+                            <DarkModeIcon src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
+                          ) : (
+                            <img
+                              src={skill.icon}
+                              alt={skill.name}
+                              className="w-full h-full object-contain"
+                            />
+                          )}
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              </FadeInOnView>
-            ))}
-          </div>
+              </div>
+            </FadeInOnView>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
   )
 }
 

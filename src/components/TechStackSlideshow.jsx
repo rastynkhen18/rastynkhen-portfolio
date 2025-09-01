@@ -16,7 +16,7 @@ import TailwindIcon from "../assets/icons/tailwindcss.svg";
 import BootstrapIcon from "../assets/icons/bootstrap.svg";
 import NextIcon from "../assets/icons/nextjs.svg";
 import SupabaseIcon from "../assets/icons/supabase.svg";
-import AndroidStudioIcon from "../assets/icons/android.svg";
+import AndroidStudioIcon from "../assets/icons/androidstudio.png";
 import FirebaseIcon from "../assets/icons/firebase.svg";
 import UnityIcon from "../assets/icons/unity.svg";
 import ReactNativeIcon from "../assets/icons/react.svg";
@@ -35,39 +35,39 @@ import GithubIcon from "../assets/icons/github.svg";
 import VercelIcon from "../assets/icons/vercel.svg";
 
 const techStack = [
-  { icon: <img src={HtmlIcon} alt="HTML" className="w-6 h-6" />},
-  { icon: <img src={CssIcon} alt="CSS" className="w-6 h-6" />},
+  { icon: <img src={HtmlIcon} alt="HTML" className="w-6 h-6" /> },
+  { icon: <img src={CssIcon} alt="CSS" className="w-6 h-6" /> },
   { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" /> },
-  { icon: <DarkModeIcon src={PhpIcon} alt="PHP" className="w-6 h-6" />},
+  { icon: <DarkModeIcon src={PhpIcon} alt="PHP" className="w-6 h-6" /> },
   { icon: <img src={LaravelIcon} alt="PHP" className="w-6 h-6" /> },
-  { icon: <img src={NodejsIcon} alt="Node.js" className="w-6 h-6" />},
-  { icon: <DarkModeIcon src={ExpressIcon} alt="Express.js" className="w-6 h-6" />},
-  { icon: <img src={MysqlIcon} alt="MySQL" className="w-6 h-6" />},
+  { icon: <img src={NodejsIcon} alt="Node.js" className="w-6 h-6" /> },
+  { icon: <DarkModeIcon src={ExpressIcon} alt="Express.js" className="w-6 h-6" /> },
+  { icon: <img src={MysqlIcon} alt="MySQL" className="w-6 h-6" /> },
   // { icon: <img src={PostgresqlIcon} alt="PostgreSQL" className="w-6 h-6" />},
-  { icon: <img src={MongodbIcon} alt="MongoDB" className="w-6 h-6" />},
-  { icon: <img src={ReactIcon} alt="React.js" className="w-6 h-6" />},
+  { icon: <img src={MongodbIcon} alt="MongoDB" className="w-6 h-6" /> },
+  { icon: <img src={ReactIcon} alt="React.js" className="w-6 h-6" /> },
   { icon: <img src={TailwindIcon} alt="Tailwind CSS" className="w-6 h-6" /> },
-  { icon: <img src={BootstrapIcon} alt="Bootstrap" className="w-6 h-6" />},
-  { icon: <img src={NextIcon} alt="Next.js" className="w-6 h-6" />},
-  { icon: <img src={SupabaseIcon} alt="Supabase" className="w-6 h-6" />},
-  { icon: <img src={AndroidStudioIcon} alt="Android Studio" className="w-6 h-6" />},
-  { icon: <img src={FirebaseIcon} alt="Firebase" className="w-6 h-6" />},
-  { icon: <DarkModeIcon src={UnityIcon} alt="Unity" className="w-6 h-6" />},
-  { icon: <img src={ReactNativeIcon} alt="React Native" className="w-6 h-6" />},
-  { icon: <img src={FlutterIcon} alt="Flutter" className="w-6 h-6" />},
-  { icon: <img src={FigmaIcon} alt="Figma" className="w-6 h-6" />},
-  { icon: <img src={CanvaIcon} alt="Canva" className="w-6 h-6" />},
-  { icon: <img src={PhotoshopIcon} alt="Adobe Photoshop" className="w-6 h-6" />},
-  { icon: <img src={PremiereIcon} alt="Adobe Illustrator" className="w-6 h-6" />},
-  { icon: <img src={CppIcon} alt="C++" className="w-6 h-6" />},
-  { icon: <img src={JavaIcon} alt="Java" className="w-6 h-6" />},
-  { icon: <img src={CSharpIcon} alt="C#" className="w-6 h-6" />},
-  { icon: <img src={PythonIcon} alt="Python" className="w-6 h-6" />},
-  { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" />},
-  { icon: <img src={TypescriptIcon} alt="TypeScript" className="w-6 h-6" />},
-  { icon: <img src={GitIcon} alt="Git" className="w-6 h-6" />},
-  { icon: <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-6 h-6" />},
-  { icon: <DarkModeIcon src={VercelIcon} alt="Vercel" className="w-6 h-6" />}
+  { icon: <img src={BootstrapIcon} alt="Bootstrap" className="w-6 h-6" /> },
+  { icon: <img src={NextIcon} alt="Next.js" className="w-6 h-6" /> },
+  { icon: <img src={SupabaseIcon} alt="Supabase" className="w-6 h-6" /> },
+  { icon: <img src={FirebaseIcon} alt="Firebase" className="w-6 h-6" /> },
+  { icon: <img src={AndroidStudioIcon} alt="Android Studio" className="w-6 h-6" /> },
+  { icon: <img src={ReactNativeIcon} alt="React Native" className="w-6 h-6" /> },
+  { icon: <img src={FlutterIcon} alt="Flutter" className="w-6 h-6" /> },
+  { icon: <DarkModeIcon src={UnityIcon} alt="Unity" className="w-6 h-6" /> },
+  { icon: <img src={FigmaIcon} alt="Figma" className="w-6 h-6" /> },
+  { icon: <img src={CanvaIcon} alt="Canva" className="w-6 h-6" /> },
+  { icon: <img src={PhotoshopIcon} alt="Adobe Photoshop" className="w-6 h-6" /> },
+  { icon: <img src={PremiereIcon} alt="Adobe Illustrator" className="w-6 h-6" /> },
+  { icon: <img src={CppIcon} alt="C++" className="w-6 h-6" /> },
+  { icon: <img src={CSharpIcon} alt="C#" className="w-6 h-6" /> },
+  { icon: <img src={JavaIcon} alt="Java" className="w-6 h-6" /> },
+  { icon: <img src={PythonIcon} alt="Python" className="w-6 h-6" /> },
+  { icon: <img src={JsIcon} alt="JavaScript" className="w-6 h-6" /> },
+  { icon: <img src={TypescriptIcon} alt="TypeScript" className="w-6 h-6" /> },
+  { icon: <img src={GitIcon} alt="Git" className="w-6 h-6" /> },
+  { icon: <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-6 h-6" /> },
+  { icon: <DarkModeIcon src={VercelIcon} alt="Vercel" className="w-6 h-6" /> }
 ];
 
 const TechStackSlideshow = () => {
@@ -116,7 +116,7 @@ const TechStackSlideshow = () => {
                 </div>
               ))}
             </div>
-            <p className="text-sm md:text-base text-[var(--text-gray)] p-5">Equipped me with the modern development tools that shape my tech stack.</p>
+            <p className="text-xs md:text-base text-[var(--text-gray)] p-5">Equipped me with the modern development tools that shape my tech stack.</p>
           </div>
         </div>
       </div>
