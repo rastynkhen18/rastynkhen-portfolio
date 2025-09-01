@@ -123,7 +123,7 @@ const techIcons = {
   'Supabase': SupabaseIcon,
   'MongoDB': MongodbIcon,
   'Firebase': FirebaseIcon,
-  'Android': AndroidIcon,
+  'Android Studio': AndroidIcon,
   'Flutter': FlutterIcon,
   'Figma': FigmaIcon,
   'Adobe Photoshop': PhotoshopIcon,
