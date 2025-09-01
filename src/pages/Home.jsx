@@ -1,5 +1,7 @@
 import React from 'react'
 import TechStackSlideshow from '../components/TechStackSlideshow'
+import GithubIcon from "../assets/icons/github.svg"
+import DarkModeIcon from "../components/DarkModeIcon";
 import { Code, SendHorizonal } from 'lucide-react'
 
 const HeroSection = () => {
@@ -36,15 +38,24 @@ const HeroSection = () => {
                                 className="text-xs md:text-base px-4 py-2 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white rounded-lg transition-all duration-300 flex items-center justify-center gap-1 shadow-lg cursor-pointer"
                             >
                                 {/* <Code size={18} /> */}
-                                Explore Projects
+                                Get Started
                             </button>
-                            <button
+                            {/* <button
                                 onClick={() => scrollToSection('contact')}
                                 className="text-xs md:text-base px-4 py-2 bg-[var(--card-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
                             >
-                                {/* <SendHorizonal size={18} /> */}
+                                <SendHorizonal size={18} />
                                 Let's Connect
-                            </button>
+                            </button> */}
+                            <button><a
+                                href="https://github.com/rastynkhen18"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xs md:text-base px-4 py-2 bg-[var(--card-color)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
+                            >
+                                <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-4 h-4" />
+                                GitHub
+                            </a></button>
                         </div>
                     </div>
                 </div>

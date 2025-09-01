@@ -47,15 +47,15 @@ import VercelIcon from '../assets/icons/vercel.svg'
 
 
 const Skills = () => {
-  const frontendSkills = [
+  const webdevSkills = [
     { name: 'HTML', icon: HtmlIcon },
     { name: 'CSS', icon: CssIcon },
     { name: 'JavaScript', icon: JavaScriptIcon },
     { name: 'TypeScript', icon: TypeScriptIcon },
     { name: 'React.js', icon: ReactIcon },
-    { name: 'Next.js', icon: NextjsIcon },
     { name: 'Tailwind CSS', icon: TailwindIcon },
-    { name: 'Bootstrap', icon: BootstrapIcon }
+    { name: 'Next.js', icon: NextjsIcon }
+    // { name: 'Bootstrap', icon: BootstrapIcon }
   ]
 
   const backendSkills = [
@@ -64,8 +64,8 @@ const Skills = () => {
     { name: 'Node.js', icon: NodejsIcon },
     { name: 'Express.js', icon: ExpressIcon, useDarkMode: true },
     { name: 'C++', icon: CppIcon },
-    { name: 'Java', icon: JavaIcon },
     { name: 'C#', icon: CsharpIcon },
+    { name: 'Java', icon: JavaIcon },
     { name: 'Python', icon: PythonIcon }
   ]
 
@@ -79,7 +79,8 @@ const Skills = () => {
   const mobileSkills = [
     { name: 'Android Studio', icon: AndroidIcon },
     { name: 'React Native', icon: ReactNativeIcon },
-    { name: 'Flutter', icon: FlutterIcon }
+    { name: 'Tailwind CSS', icon: TailwindIcon }
+    // { name: 'Flutter', icon: FlutterIcon }
   ]
 
   const designSkills = [
@@ -108,24 +109,24 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Web Development',
       description: 'Building responsive and interactive user interfaces with modern web technologies.',
-      skills: frontendSkills,
-    },
-    {
-      title: 'Backend Development',
-      description: 'Creating robust server-side applications and APIs to power web applications.',
-      skills: backendSkills,
-    },
-    {
-      title: 'Database',
-      description: 'Designing and implementing efficient data storage and retrieval systems.',
-      skills: databaseSkills,
+      skills: webdevSkills,
     },
     {
       title: 'Mobile App Development',
       description: 'Developing cross-platform and native mobile applications for iOS and Android.',
       skills: mobileSkills,
+    },
+    {
+      title: 'API Integration & Backend Development',
+      description: 'Creating robust server-side applications and APIs to power web applications.',
+      skills: backendSkills,
+    },
+    {
+      title: 'Database Managemnt',
+      description: 'Designing and implementing efficient data storage and retrieval systems.',
+      skills: databaseSkills,
     },
     {
       title: 'Game Development',
@@ -177,7 +178,7 @@ const Skills = () => {
                       <p className="text-[var(--text-gray)] text-sm">{category.description}</p>
                     </div>
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-2">
                       {category.skills.map((skill) => (
                         <div
                           className={`flex items-center rounded-lg text-sm font-medium transition-all duration-300`}
