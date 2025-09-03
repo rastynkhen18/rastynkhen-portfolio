@@ -28,8 +28,8 @@ const HeroSection = () => {
                         </h1>
                         <p className="max-w-3xl text-[var(--text-gray)] text-justify text-xs md:text-center md:text-base">
                             Full-Stack Developer and 4th Year IT Student at Bulacan State Univerity - Bustos Campus.
-                            Passionate about creating modern web and mobile applications with React.js,
-                            Next.js, Tailwind CSS and PostgreSQL. Currently specializing in Web and Mobile App Development.
+                            Passionate about creating modern web and mobile applications with Next.js,
+                            React.js, React Native, Tailwind CSS and PostgreSQL. Currently specializing in Web and Mobile App Development.
                         </p>
 
                         <div className="flex flex-row justify-center items-center gap-3">
