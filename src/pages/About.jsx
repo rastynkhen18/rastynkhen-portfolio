@@ -34,7 +34,7 @@ const About = () => {
                   backend, mobile, and game development, I'm passionate about creating innovative digital solutions.
                 </p>
                 <p>
-                  My journey in technology has equipped me with expertise in modern frameworks like React.js, Next.js,
+                  My journey in technology has equipped me with expertise in modern frameworks like Next.js, React.js,
                   and React Native, along with strong foundations in multiple programming languages and development tools.
                 </p>
 
