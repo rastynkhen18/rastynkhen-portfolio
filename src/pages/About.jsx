@@ -24,7 +24,7 @@ const About = () => {
           <div className="flex justify-center items-center flex-wrap gap-6 max-w-5xl mx-auto">
             {/* Personal Info */}
             <div className="bg-[var(--card-color)] border border-[var(--border-color)] rounded-2xl p-8 w-auto h-auto sm:w-145 sm:h-100">
-              <h3 className="text-2xl font-semibold text-[var(--text-color)] mb-6">
+              <h3 className="text-lg font-semibold text-[var(--text-color)] mb-6">
                 4th Year IT Student & Full Stack Developer
               </h3>
               <div className="space-y-4 text-[var(--text-gray)] leading-relaxed">
