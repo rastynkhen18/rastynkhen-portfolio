@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row justify-center items-center">
                         <p className="text-[var(--text-gray)] text-center md:text-right flex items-center gap-2">
-                            © 2025 Rastyn Khen Ong Acasio | Built with React.js & Tailwind CSS
+                            © 2025 Rastyn Khen Ong Acasio | Full-Stack Developer
                         </p>
                     </div>
                 </div>
