@@ -88,7 +88,7 @@ const Contact = () => {
           {/* Contact Form */}
           <FadeInOnView delay={0.1}>
             <div className="bg-[var(--card-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300">
-              <h3 className="text-2xl font-bold text-[var(--text-color)] mb-6">Send Me a Message</h3>
+              <h3 className="text-lg font-bold text-[var(--text-color)] mb-6">Send Me a Message</h3>
 
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-100 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg">
@@ -193,7 +193,7 @@ const Contact = () => {
                   I'm always interested in new opportunities and collaborations.
                   Feel free to reach out if you'd like to work together!
                 </p>
-                <h3 className="text-2xl font-bold text-[var(--text-color)] mb-6">Contact Information</h3>
+                <h3 className="text-lg font-bold text-[var(--text-color)] mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-[var(--primary-color)]/10 flex items-center justify-center flex-shrink-0">
@@ -238,7 +238,7 @@ const Contact = () => {
 
               {/* Social Media Links integrated into contact info */}
               <div className="mt-8">
-                <h4 className="text-2xl font-bold text-[var(--text-color)] mb-4">Social Media</h4>
+                <h4 className="text-lg font-bold text-[var(--text-color)] mb-4">Social Media</h4>
                 <div className="flex flex-wrap items-center gap-4">
                   <a
                     href="https://github.com/rastynkhen18"
