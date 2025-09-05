@@ -189,7 +189,7 @@ const Contact = () => {
           <FadeInOnView delay={0.2}>
             <div className="bg-[var(--card-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300 h-full flex flex-col justify-between">
               <div>
-                <p className="text-lg text-[var(--text-gray)] mx-auto mb-10">
+                <p className="text-base text-[var(--text-gray)] mx-auto mb-10">
                   I'm always interested in new opportunities and collaborations.
                   Feel free to reach out if you'd like to work together!
                 </p>
