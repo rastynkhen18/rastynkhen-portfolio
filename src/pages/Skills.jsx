@@ -169,7 +169,7 @@ const Skills = () => {
               key={index}
             >
               <div
-                className="bg-[var(--card-color)] rounded-xl overflow-hidden border border-[var(--border-color)] transition-all duration-500 hover:-translate-y-2 group h-full"
+                className="bg-[var(--card-bg)] rounded-xl overflow-hidden border border-[var(--border-color)] transition-all duration-500 hover:-translate-y-2 group h-full"
               >
                 <div className={`h-1.5 bg-gradient-to-r ${category.gradient}`}></div>
 

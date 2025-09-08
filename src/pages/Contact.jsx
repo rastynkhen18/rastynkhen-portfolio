@@ -87,7 +87,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Contact Form */}
           <FadeInOnView delay={0.1}>
-            <div className="bg-[var(--card-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300">
+            <div className="bg-[var(--card-bg)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300">
               <h3 className="text-lg font-bold text-[var(--text-color)] mb-6">Send Me a Message</h3>
 
               {submitStatus === 'success' && (
@@ -187,7 +187,7 @@ const Contact = () => {
 
           {/* Contact Information*/}
           <FadeInOnView delay={0.2}>
-            <div className="bg-[var(--card-color)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300 h-full flex flex-col justify-between">
+            <div className="bg-[var(--card-bg)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300 h-full flex flex-col justify-between">
               <div>
                 <p className="text-base text-[var(--text-gray)] mx-auto mb-10">
                   I'm always interested in new opportunities and collaborations.

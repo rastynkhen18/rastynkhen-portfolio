@@ -23,7 +23,7 @@ const About = () => {
         <FadeInOnView>
           <div className="flex justify-center items-center flex-wrap gap-6 max-w-5xl mx-auto">
             {/* Personal Info */}
-            <div className="bg-[var(--card-color)] border border-[var(--border-color)] rounded-2xl p-8 w-auto h-auto sm:w-145 sm:h-100">
+            <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl p-8 w-auto h-auto sm:w-145 sm:h-100">
               <h3 className="text-lg font-semibold text-[var(--text-color)] mb-6">
                 4th Year IT Student & Full Stack Developer
               </h3>
