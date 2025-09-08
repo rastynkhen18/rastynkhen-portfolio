@@ -3,12 +3,11 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-[var(--background-color)] text-[var(--text-color)] p-5 border-t border-[var(--border-color)]">
+            <footer className="bg-[var(--background-color)] p-5 border-t border-[var(--border-color)]">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-col md:flex-row justify-center items-center">
-                        <p className="text-[var(--text-gray)] text-center md:text-right flex items-center gap-2">
-                            © 2025 Rastyn Khen Ong Acasio | Full-Stack Developer
-                        </p>
+                    <div className="flex justify-center items-center flex-col gap-1 text-center text-xs text-[var(--text-gray)]">
+                        <p>© 2025 Rastyn Khen Ong Acasio | Full-Stack Developer. All rights reserved.</p>
+                        <p>Built with React.js & Tailwind CSS.</p>
                     </div>
                 </div>
             </footer>

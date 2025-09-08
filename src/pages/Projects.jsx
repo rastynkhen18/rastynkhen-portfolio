@@ -140,14 +140,14 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <FadeInOnView>
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
               <span className="flex items-center gap-3">Featured <mark className='bg-transparent text-[var(--primary-color)]'>Projects</mark></span>
               <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
             </h2>
           </div>
         </FadeInOnView>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-6 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <FadeInOnView>
               <div key={index} className="bg-[var(--card-bg)] rounded-2xl overflow-hidden border border-[var(--border-color)] shadow-lg hover:shadow-[var(--primary-color)]/20 transition-all duration-300 group">
@@ -162,8 +162,8 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-[var(--white-color)] mb-2">{project.title}</h3>
-                  <p className="text-[var(--text-gray)] mb-4 text-sm leading-relaxed">{project.description}</p>
+                  <h3 className="text-lg font-bold text-[var(--white-color)] mb-2">{project.title}</h3>
+                  <p className="text-[var(--text-gray)] mb-4 text-sm">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
                       <span

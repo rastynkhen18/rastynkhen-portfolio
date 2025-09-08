@@ -16,17 +16,17 @@ const HeroSection = () => {
     }
 
     return (
-        <section id="home" className="py-20 bg-[var(--black-color)] mt-6">
+        <section id="home" className="py-20 bg-[var(--black-color)] mt-16">
             <div className="container mx-auto px-4">
                 <div className="flex justify-center items-center p-5">
                     <div className="space-y-6">
-                        <h1 className="text-3xl md:text-6xl font-bold text-[var(--white-color)] text-center">
+                        <h1 className="text-2xl md:text-5xl font-bold text-[var(--white-color)] text-center">
                             Hi, I'm{' '}
                             <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent text-center">
                                 Rastyn Khen
                             </span>
                         </h1>
-                        <p className="max-w-3xl text-[var(--text-gray)] text-justify text-xs md:text-center md:text-base">
+                        <p className="max-w-3xl text-[var(--text-gray)] text-justify text-xs md:text-center md:text-sm">
                             Full-Stack Developer and 4th Year IT Student at Bulacan State Univerity - Bustos Campus.
                             Passionate about creating modern web and mobile applications with Next.js,
                             React.js, React Native, Tailwind CSS and PostgreSQL. Currently specializing in Web and Mobile App Development.

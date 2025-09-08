@@ -156,7 +156,7 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-[var(--gray-color)]">
       <div className="container mx-auto px-4">
         <FadeInOnView>
-          <div className="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+          <div className="text-2xl md:text-4xl font-bold text-center mb-16 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
             <span className="flex items-center gap-3">Technical <mark className='bg-transparent text-[var(--primary-color)]'>Skills</mark></span>
             <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
           </div>
@@ -175,7 +175,7 @@ const Skills = () => {
 
                 <div className="p-6">
                   <div className="flex items-start flex-col gap-4 mb-4">
-                    <h3 className="text-xl font-bold text-[var(--text-color)]">{category.title}</h3>
+                    <h3 className="text-lg font-bold text-[var(--text-color)]">{category.title}</h3>
                     <p className="text-[var(--text-gray)] text-sm">{category.description}</p>
                   </div>
 

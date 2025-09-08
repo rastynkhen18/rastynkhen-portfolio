@@ -14,7 +14,7 @@ const About = () => {
     <section id="about" className="py-20 bg-[var(--gray-color)]">
       <div className="container mx-auto px-4">
         <FadeInOnView>
-          <div className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+          <div className="text-2xl md:text-4xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
             <span className="flex items-center gap-3">About <mark className='bg-transparent text-[var(--primary-color)]' >Me</mark></span>
             <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
           </div>
@@ -27,7 +27,7 @@ const About = () => {
               <h3 className="text-lg font-semibold text-[var(--text-color)] mb-6">
                 4th Year IT Student & Full Stack Developer
               </h3>
-              <div className="space-y-4 text-[var(--text-gray)] leading-relaxed">
+              <div className="space-y-4 text-[var(--text-gray)] text-xs md:text-sm">
                 <p>
                   I'm a 4th year Information Technology student at Bulacan State University - Bustos Campus,
                   specializing in Web and Mobile App Development. With a comprehensive skill set spanning frontend,

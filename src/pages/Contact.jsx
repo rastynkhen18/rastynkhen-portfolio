@@ -77,7 +77,7 @@ const Contact = () => {
 
         <FadeInOnView>
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
               <span className="flex items-center gap-3">Let's <mark className='bg-transparent text-[var(--primary-color)]'>Connect</mark></span>
               <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
             </h2>
@@ -189,7 +189,7 @@ const Contact = () => {
           <FadeInOnView delay={0.2}>
             <div className="bg-[var(--card-bg)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300 h-full flex flex-col justify-between">
               <div>
-                <p className="text-base text-[var(--text-gray)] mx-auto mb-10">
+                <p className="text-sm lg:text-base text-[var(--text-gray)] mx-auto mb-10">
                   I'm always interested in new opportunities and collaborations.
                   Feel free to reach out if you'd like to work together!
                 </p>
