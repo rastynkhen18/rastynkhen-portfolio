@@ -54,8 +54,9 @@ const Skills = () => {
     { name: 'TypeScript', icon: TypeScriptIcon },
     { name: 'React.js', icon: ReactIcon },
     { name: 'Tailwind CSS', icon: TailwindIcon },
-    { name: 'Next.js', icon: NextjsIcon }
+    { name: 'Next.js', icon: NextjsIcon },
     // { name: 'Bootstrap', icon: BootstrapIcon }
+    { name: 'Node.js', icon: NodejsIcon }
   ]
 
   const backendSkills = [
@@ -80,8 +81,9 @@ const Skills = () => {
     { name: 'Android Studio', icon: AndroidIcon },
     { name: 'Java', icon: JavaIcon },
     { name: 'React Native', icon: ReactNativeIcon },
-    { name: 'Tailwind CSS', icon: TailwindIcon }
+    { name: 'Tailwind CSS', icon: TailwindIcon },
     // { name: 'Flutter', icon: FlutterIcon }
+    { name: 'Node.js', icon: NodejsIcon }
   ]
 
   const designSkills = [
@@ -119,10 +121,20 @@ const Skills = () => {
       description: 'Developing cross-platform and native mobile applications for iOS and Android.',
       skills: mobileSkills,
     },
+    // {
+    //   title: 'API Integration & Backend Development',
+    //   description: 'Creating robust server-side applications and APIs to power web applications.',
+    //   skills: backendSkills,
+    // },
     {
-      title: 'API Integration & Backend Development',
-      description: 'Creating robust server-side applications and APIs to power web applications.',
-      skills: backendSkills,
+      title: 'Game Development',
+      description: 'Creating interactive gaming experiences with industry-standard tools and technologies.',
+      skills: gameDevSkills,
+    },
+    {
+      title: 'UI/UX Design',
+      description: 'Crafting visually appealing and user-friendly interfaces with professional design tools.',
+      skills: designSkills,
     },
     {
       title: 'Database Management',
@@ -130,25 +142,15 @@ const Skills = () => {
       skills: databaseSkills,
     },
     {
-      title: 'Game Development',
-      description: 'Creating interactive gaming experiences with industry-standard tools and technologies.',
-      skills: gameDevSkills,
-    },
-    {
-      title: 'Design & Media',
-      description: 'Crafting visually appealing and user-friendly interfaces with professional design tools.',
-      skills: designSkills,
-    },
-    {
-      title: 'Networking & Cybersecurity',
-      description: 'Implementing secure network infrastructures and performing security assessments.',
-      skills: securitySkills,
-    },
-    {
       title: 'Version Control & Deployment',
       description: 'Utilizing version control and deployment tools to streamline development workflows.',
       skills: toolsSkills,
     }
+    // {
+    //   title: 'Networking & Cybersecurity',
+    //   description: 'Implementing secure network infrastructures and performing security assessments.',
+    //   skills: securitySkills,
+    // },
   ]
 
 
