@@ -22,7 +22,7 @@ const HeroSection = () => {
                     <div className="space-y-6">
                         <h1 className="text-3xl md:text-6xl font-bold text-[var(--white-color)] text-center">
                             Hi, I'm{' '}
-                            <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent text-center">
+                            <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent text-center">
                                 Rastyn Khen
                             </span>
                         </h1>
@@ -35,18 +35,12 @@ const HeroSection = () => {
                         <div className="flex flex-row justify-center items-center gap-3">
                             <button
                                 onClick={() => scrollToSection('projects')}
-                                className="text-sm md:text-base px-4 py-2 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white rounded-lg transition-all duration-300 flex items-center justify-center gap-1 shadow-lg cursor-pointer"
+                                className="text-sm md:text-base px-4 py-2 bg-[var(--primary-color)] text-white hover:bg-[var(--primary-hover)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 shadow-lg cursor-pointer"
                             >
                                 {/* <Code size={18} /> */}
                                 Get Started
                             </button>
-                            {/* <button
-                                onClick={() => scrollToSection('contact')}
-                                className="text-xs md:text-base px-4 py-2 bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
-                            >
-                                <SendHorizonal size={18} />
-                                Let's Connect
-                            </button> */}
+                    
                             <button><a
                                 href="https://github.com/rastynkhen18"
                                 target="_blank"

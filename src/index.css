@@ -2,12 +2,7 @@
 
 :root {
   --primary-color: #9333ea;
-  --secondary-color: #9333ea;
-  /* --primary-color: #61dafb;
-  --secondary-color: #38bdf8; */
-  /* --primary-color: #3b82f6;
-  --secondary-color: #9333ea; */
-  /* --primary-color: #7ED7A5;  */
+  --primary-hover: #7e22ce;
   --background-color: #F8F9FA;
   --card-bg: #FFFFFF;
   --border-color: #E6E7E8;
@@ -18,12 +13,7 @@
 
 :root.dark {
   --primary-color: #9333ea;
-   --secondary-color: #9333ea;
-  /* --primary-color: #61dafb;
-  --secondary-color: #0ea5e9; */
-  /* --primary-color: #3b82f6;
-  --secondary-color: #9333ea; */
-  /* --primary-color: #34B27B; */
+  --primary-hover: #7e22ce;
   --background-color: #121212;
   --card-bg: #242424;
   --border-color: #363636;
@@ -52,6 +42,11 @@ html {
   filter: brightness(0) saturate(100%) invert(1) !important;
 }
 
+
+  /* --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --secondary-color: #9333ea;
+  --secondary-hover: #7e22ce; */
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -184,7 +184,7 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 bg-[var(--primary-color)] text-white rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md hover:bg-[var(--primary-color)]"
+                      className="flex-1 px-4 py-2 bg-[var(--primary-color)] hover:bg-[var(--primary-hover)] text-white rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md"
                     >
                       <span>▶</span>
                       Live Demo
