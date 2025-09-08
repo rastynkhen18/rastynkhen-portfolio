@@ -134,7 +134,7 @@ const Header = () => {
 				className={`absolute z-40 top-16 left-0 w-full h-screen ${scrolled
 					? "bg-[var(--card-bg)] text-[var(--text-color)]"
 					: "bg-[var(--card-bg)] text-[var(--text-color)]"
-					} flex flex-col justify-start items-center gap-6 px-10 py-5 text-base transition-all duration-300 md:hidden ${isOpen
+					} flex flex-col justify-start items-start gap-6 px-10 py-5 text-base transition-all duration-300 md:hidden ${isOpen
 						? "translate-x-0 opacity-100"
 						: "-translate-x-[-130%] opacity-0 pointer-events-none"
 					} ${scrolled
