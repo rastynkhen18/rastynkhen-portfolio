@@ -37,8 +37,13 @@ const App = () => {
 
         <Footer />
       </Router>
+    </div>
+  )
+}
 
-      {/* <Router>
+export default App
+
+{/* <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -49,11 +54,6 @@ const App = () => {
         </Routes>
         <Footer />
       </Router> */}
-    </div>
-  )
-}
-
-export default App
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
