@@ -176,7 +176,7 @@ const Skills = () => {
                 <div className="p-6">
                   <div className="flex items-start flex-col gap-4 mb-4">
                     <h3 className="text-lg font-bold text-[var(--text-color)]">{category.title}</h3>
-                    <p className="text-[var(--text-gray)] text-sm">{category.description}</p>
+                    <p className="text-xs md:text-sm text-[var(--text-gray)]">{category.description}</p>
                   </div>
 
                   <div className="flex items-center gap-2">
