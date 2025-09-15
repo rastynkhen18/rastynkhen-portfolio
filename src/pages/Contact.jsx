@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import FadeInOnView from '../components/FadeInOnView'
 import DarkModeIcon from '../components/DarkModeIcon'
 import emailjs from "@emailjs/browser";
-
-// Import social icons
 import GithubIcon from '../assets/icons/github.svg'
 import LinkedinIcon from '../assets/icons/linkedin.svg'
 import FacebookIcon from '../assets/icons/facebook.svg'
@@ -75,14 +73,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-[var(--background-color)]">
       <div className="container mx-auto px-4">
 
-        <FadeInOnView>
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
-              <span className="flex items-center gap-3">Let's <mark className='bg-transparent text-[var(--primary-color)]'>Connect</mark></span>
-              <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
-            </h2>
-          </div>
-        </FadeInOnView>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Contact Form */}
@@ -187,9 +178,15 @@ const Contact = () => {
 
           {/* Contact Information*/}
           <FadeInOnView delay={0.2}>
-            <div className="bg-[var(--card-bg)] p-8 rounded-2xl border border-[var(--border-color)] shadow-md transition-shadow duration-300 h-full flex flex-col justify-between">
+            <div className="p-4 h-full flex flex-col justify-between">
               <div>
-                <p className="text-sm lg:text-base text-[var(--text-gray)] mx-auto mb-10">
+                <div className="text-center mb-6">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-start justify-center gap-3">
+                    <span className="flex items-center gap-3">Let's <mark className='bg-transparent text-[var(--primary-color)]'>Connect</mark></span>
+                    <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
+                  </h2>
+                </div>
+                <p className="text-sm lg:text-base text-[var(--text-gray)] mx-auto mb-6">
                   I'm always interested in new opportunities and collaborations.
                   Feel free to reach out if you'd like to work together!
                 </p>
