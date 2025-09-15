@@ -233,7 +233,7 @@ const Contact = () => {
               </div>
 
               {/* Social Media Links integrated into contact info */}
-              <div className='my-4'>
+              <div className='mt-8'>
                 <h4 className="text-lg font-bold text-[var(--text-color)] mb-4">Social Media</h4>
                 <div className="flex flex-wrap items-center gap-4">
                   <a
