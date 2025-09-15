@@ -73,7 +73,12 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-[var(--background-color)]">
       <div className="container mx-auto px-4">
 
-
+        <FadeInOnView>
+          <div className="text-2xl md:text-3xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <span className="flex items-center gap-3">Let's <mark className='bg-transparent text-[var(--primary-color)]'>Connect</mark></span>
+            <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
+          </div>
+        </FadeInOnView>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Contact Form */}
@@ -178,15 +183,9 @@ const Contact = () => {
 
           {/* Contact Information*/}
           <FadeInOnView delay={0.2}>
-            <div className="p-4 h-full flex flex-col justify-between">
+            <div className="p-8 h-full flex flex-col justify-between">
               <div>
-                <div className="text-center mb-6">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-start justify-center gap-3">
-                    <span className="flex items-center gap-3">Let's <mark className='bg-transparent text-[var(--primary-color)]'>Connect</mark></span>
-                    <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
-                  </h2>
-                </div>
-                <p className="text-sm lg:text-base text-[var(--text-gray)] mx-auto mb-6">
+                <p className="text-sm lg:text-base text-[var(--text-gray)] mx-auto mb-12">
                   I'm always interested in new opportunities and collaborations.
                   Feel free to reach out if you'd like to work together!
                 </p>
@@ -234,7 +233,7 @@ const Contact = () => {
               </div>
 
               {/* Social Media Links integrated into contact info */}
-              <div className="mt-8">
+              <div className='my-4'>
                 <h4 className="text-lg font-bold text-[var(--text-color)] mb-4">Social Media</h4>
                 <div className="flex flex-wrap items-center gap-4">
                   <a

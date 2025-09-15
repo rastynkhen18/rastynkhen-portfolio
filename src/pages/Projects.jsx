@@ -139,11 +139,9 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-[var(--background-color)]">
       <div className="container mx-auto px-4">
         <FadeInOnView>
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
-              <span className="flex items-center gap-3">Featured <mark className='bg-transparent text-[var(--primary-color)]'>Projects</mark></span>
-              <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
-            </h2>
+          <div className="text-2xl md:text-3xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">
+            <span className="flex items-center gap-3">Featured <mark className='bg-transparent text-[var(--primary-color)]'>Projects</mark></span>
+            <span className="w-32 h-1.5 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color-light)]"></span>
           </div>
         </FadeInOnView>
 
