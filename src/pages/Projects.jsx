@@ -11,6 +11,9 @@ import ReactIcon from '../assets/icons/react.svg'
 import NextjsIcon from '../assets/icons/nextjs.svg'
 import TailwindIcon from '../assets/icons/tailwindcss.svg'
 import BootstrapIcon from '../assets/icons/bootstrap.svg'
+import ShopifyIcon from '../assets/icons/shopify.svg'
+import GraphqlIcon from '../assets/icons/graphql.svg'
+import LiquidIcon from '../assets/icons/liquid.svg'
 
 import PhpIcon from '../assets/icons/php.svg'
 import LaravelIcon from '../assets/icons/laravel.svg'
@@ -42,6 +45,7 @@ import VercelIcon from '../assets/icons/vercel.svg'
 
 //Import Projects
 import DigoTraders from '../assets/projects/digo-traders.png'
+import AvenionStyle from '../assets/projects/avenionstyle.png'
 import ButFirstCoffee from '../assets/projects/butfirstcoffee.png'
 import AndroidStudioCalculator from '../assets/projects/android-studioCalculator.jpg'
 import AndroidStudioCruds from '../assets/projects/android-studioCruds.jpg'
@@ -52,11 +56,19 @@ import UnityEndlessRunner from '../assets/projects/untiy-EndlessRunnerAot.jpg'
 const projects = [
   {
     title: 'Digo Traders',
-    description: 'A modern landing page for one of my clients. Built with React.js and Tailwind CSS.',
+    description: 'Developed a fully responsive React.js and Tailwind CSS landing page for Digo Traders, showcasing their air, sea, and land shipping services. Optimized for speed, SEO, and a clean, user-friendly UI/UX.',
     technologies: ['React.js', 'Tailwind CSS', 'Git', 'Github', 'Vercel'],
     image: DigoTraders,
-    liveUrl: 'https://digo-traders.vercel.app/',
+    liveUrl: 'https://digotraders.com',
     githubUrl: 'https://github.com/rastynkhen18/digo-traders',
+  },
+  {
+    title: 'Avenion Style',
+    description: 'Developed a customized, mobile-responsive Shopify store for Avenion, a modern lifestyle brand known for its premium clogs and personalized footwear. Implemented theme customization, product catalog setup, and third-party app integrations to deliver a seamless, stylish shopping experience.',
+    technologies: ['Shopify', 'Liquid', 'CSS', 'JavaScript', 'GraphQL', 'Git', 'Github'],
+    image: AvenionStyle,
+    liveUrl: 'https://avenionstyle.com',
+    githubUrl: 'https://github.com/rastynkhen18/avenion-style',
   },
   {
     title: 'But First Coffee',
@@ -132,6 +144,9 @@ const techIcons = {
   'Git': GitIcon,
   'Github': GithubIcon,
   'Vercel': VercelIcon,
+  'Shopify': ShopifyIcon,
+  'GraphQL': GraphqlIcon,
+  'Liquid': LiquidIcon,
 };
 
 const Projects = () => {

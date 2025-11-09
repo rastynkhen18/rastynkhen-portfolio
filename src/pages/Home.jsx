@@ -27,9 +27,9 @@ const HeroSection = () => {
                             </span>
                         </h1>
                         <p className="max-w-3xl text-[var(--text-gray)] text-justify text-xs md:text-center md:text-sm">
-                            Full-Stack Developer and 4th Year IT Student at Bulacan State Univerity - Bustos Campus.
+                            Full-Stack Developer, Shopify Web Developer and 4th Year IT Student at Bulacan State Univerity - Bustos Campus.
                             Passionate about creating modern web and mobile applications with Next.js,
-                            React.js, React Native, Tailwind CSS and PostgreSQL. Currently specializing in Web and Mobile App Development.
+                            React.js, React Native, Tailwind CSS, PostgreSQL and Shopify. Currently specializing in Web and Mobile App Development.
                         </p>
 
                         <div className="flex flex-row justify-center items-center gap-3">
@@ -38,7 +38,7 @@ const HeroSection = () => {
                                 className="text-sm md:text-base px-4 py-2 bg-[var(--primary-color)] text-white hover:bg-[var(--primary-hover)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 shadow-lg cursor-pointer"
                             >
                                 {/* <Code size={18} /> */}
-                                Get Started
+                                View Projects
                             </button>
                     
                             <button><a

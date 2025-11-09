@@ -11,6 +11,7 @@ import ReactIcon from '../assets/icons/react.svg'
 import NextjsIcon from '../assets/icons/nextjs.svg'
 import TailwindIcon from '../assets/icons/tailwindcss.svg'
 import BootstrapIcon from '../assets/icons/bootstrap.svg'
+import ShopifyIcon from '../assets/icons/shopify.svg'
 
 import ReactNativeIcon from '../assets/icons/react.svg'
 import AndroidIcon from '../assets/icons/androidstudio.png'
@@ -56,7 +57,8 @@ const Skills = () => {
     { name: 'Tailwind CSS', icon: TailwindIcon },
     { name: 'Next.js', icon: NextjsIcon },
     // { name: 'Bootstrap', icon: BootstrapIcon }
-    { name: 'Node.js', icon: NodejsIcon }
+    { name: 'Node.js', icon: NodejsIcon },
+    { name: 'Shopify', icon: ShopifyIcon }
   ]
 
   const backendSkills = [
