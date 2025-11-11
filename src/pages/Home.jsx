@@ -2,7 +2,7 @@ import React from 'react'
 import TechStackSlideshow from '../components/TechStackSlideshow'
 import GithubIcon from "../assets/icons/github.svg"
 import DarkModeIcon from "../components/DarkModeIcon";
-import { Code, SendHorizonal } from 'lucide-react'
+import { Code, SendHorizonal, ArrowRight } from 'lucide-react'
 
 const HeroSection = () => {
     const scrollToSection = (sectionId) => {
@@ -39,6 +39,7 @@ const HeroSection = () => {
                             >
                                 {/* <Code size={18} /> */}
                                 View Projects
+                                <ArrowRight size={18} />
                             </button>
                     
                             <button><a

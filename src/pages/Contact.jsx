@@ -160,7 +160,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-4 rounded-xl text-white font-medium transition-all duration-300 flex items-center justify-center gap-2 
+                  className={`w-full py-4 rounded-xl text-white font-medium transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer 
                     ${isSubmitting ? 'bg-[var(--primary-color)]/70 cursor-not-allowed' : 'bg-[var(--primary-color)] hover:bg-[var(--primary-color)]/90 shadow-lg'}`}
                 >
                   {isSubmitting ? (

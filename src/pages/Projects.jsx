@@ -83,7 +83,7 @@ const projects = [
     description: 'A simple calculator app built in Android Studio using Java. Supports basic arithmetic operations.',
     technologies: ['Android Studio', 'Java'],
     image: AndroidStudioCalculator,
-    liveUrl: '#',
+    liveUrl: 'https://android-studio-calculator.vercel.app',
     githubUrl: 'https://github.com/rastynkhen18/android-calculator',
   },
   {
@@ -91,7 +91,7 @@ const projects = [
     description: 'CRUD application for Android using Java. Allows users to create, read, update, and delete records.',
     technologies: ['Android Studio', 'Java'],
     image: AndroidStudioCruds,
-    liveUrl: '#',
+    liveUrl: 'https://android-studio-cruds.vercel.app',
     githubUrl: 'https://github.com/rastynkhen18/android-cruds',
   },
   {
@@ -99,7 +99,7 @@ const projects = [
     description: 'A Flappy Bird clone made in Unity. Features custom graphics and challenging gameplay.',
     technologies: ['Unity', 'C#'],
     image: UnityFlappyAngryBlackBird,
-    liveUrl: '#',
+    liveUrl: 'https://unity-flappy-angry-black-bird.vercel.app',
     githubUrl: 'https://github.com/rastynkhen18/unity-flappy-angry-black-bird',
   },
   {
@@ -107,7 +107,7 @@ const projects = [
     description: 'An endless runner game built in Unity. Includes multiple obstacles and scoring system.',
     technologies: ['Unity', 'C#'],
     image: UnityEndlessRunner,
-    liveUrl: '#',
+    liveUrl: 'https://unity-endless-runners.vercel.app',
     githubUrl: 'https://github.com/rastynkhen18/unity-endless-runner',
   },
 ];

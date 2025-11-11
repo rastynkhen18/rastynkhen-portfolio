@@ -78,14 +78,25 @@ const Header = () => {
 						}`}
 				>
 					{sections.map((section) => (
-						<HashLink
-							key={section}
-							smooth
-							to={`#${section}`}
-							className={getLinkClass(section)}
-						>
-							{section.charAt(0).toUpperCase() + section.slice(1)}
-						</HashLink>
+						section === "home" ? (
+							<Link
+								key={section}
+								to="/"
+								reloadDocument
+								className={getLinkClass(section)}
+							>
+								{section.charAt(0).toUpperCase() + section.slice(1)}
+							</Link>
+						) : (
+							<HashLink
+								key={section}
+								smooth
+								to={`#${section}`}
+								className={getLinkClass(section)}
+							>
+								{section.charAt(0).toUpperCase() + section.slice(1)}
+							</HashLink>
+						)
 					))}
 
 					<div className="flex justify-center items-center gap-4">
@@ -151,15 +162,27 @@ const Header = () => {
 					}`}
 			>
 				{sections.map((section) => (
-					<HashLink
-						key={section}
-						smooth
-						to={`#${section}`}
-						className={getLinkClass(section)}
-						onClick={() => setIsOpen(false)}
-					>
-						{section.charAt(0).toUpperCase() + section.slice(1)}
-					</HashLink>
+					section === "home" ? (
+						<Link
+							key={section}
+							to="/"
+							reloadDocument
+							className={getLinkClass(section)}
+							onClick={() => setIsOpen(false)}
+						>
+							{section.charAt(0).toUpperCase() + section.slice(1)}
+						</Link>
+					) : (
+						<HashLink
+							key={section}
+							smooth
+							to={`#${section}`}
+							className={getLinkClass(section)}
+							onClick={() => setIsOpen(false)}
+						>
+							{section.charAt(0).toUpperCase() + section.slice(1)}
+						</HashLink>
+					)
 				))}
 				<div className="flex justify-center items-center gap-4">
 					<a href="https://github.com/rastynkhen18" target="_blank" rel="noopener noreferrer">
