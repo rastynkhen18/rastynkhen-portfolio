@@ -33,6 +33,8 @@ import TypescriptIcon from "../assets/icons/typescript.svg";
 import GitIcon from "../assets/icons/git.svg";
 import GithubIcon from "../assets/icons/github.svg";
 import VercelIcon from "../assets/icons/vercel.svg";
+import ShopifyIcon from '../assets/icons/shopify.svg'
+import GrapQL from '../assets/icons/graphql.svg'
 
 const techStack = [
   { icon: <img src={HtmlIcon} alt="HTML" className="w-6 h-6" /> },
@@ -67,7 +69,9 @@ const techStack = [
   { icon: <img src={TypescriptIcon} alt="TypeScript" className="w-6 h-6" /> },
   { icon: <img src={GitIcon} alt="Git" className="w-6 h-6" /> },
   { icon: <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-6 h-6" /> },
-  { icon: <DarkModeIcon src={VercelIcon} alt="Vercel" className="w-6 h-6" /> }
+  { icon: <DarkModeIcon src={VercelIcon} alt="Vercel" className="w-6 h-6" /> },
+  { icon: <img src={ShopifyIcon} alt="Shopify" className="w-6 h-6" /> },
+  { icon: <img src={GrapQL} alt="GraphQL" className="w-6 h-6" /> }
 ];
 
 const TechStackSlideshow = () => {

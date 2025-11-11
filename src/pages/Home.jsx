@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="container mx-auto px-4">
                 <div className="flex justify-center items-center p-5">
                     <div className="space-y-6">
-                        <h1 className="text-2xl md:text-5xl font-bold text-[var(--white-color)] text-center">
+                        <h1 className="text-2xl md:text-5xl ft-bold text-[var(--white-color)] text-center">
                             Hi, I'm{' '}
                             <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent text-center">
                                 Rastyn Khen
