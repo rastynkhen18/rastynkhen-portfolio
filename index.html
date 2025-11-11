@@ -1,10 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/rastynkhen-dev.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rastyn Khen Ong Acasio | Full-Stack Developer</title>
+    <script>
+      // Set dark mode as default before page loads to prevent flash
+      if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'dark');
+        document.documentElement.classList.add('dark');
+      } else if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

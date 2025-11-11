@@ -1,19 +1,26 @@
 import { useState, useEffect } from "react"
 
 const DarkModeToggle = () => {
-  const [isDark, setIsDark] = useState(true)
+  // Initialize with dark mode as default
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem("theme")
+    return savedTheme !== "light" // Default to dark unless explicitly set to light
+  })
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme")
     
     // Default to dark mode if no theme is saved
-    if (savedTheme === "light") {
+    if (!savedTheme) {
+      localStorage.setItem("theme", "dark")
+      document.documentElement.classList.add("dark")
+      setIsDark(true)
+    } else if (savedTheme === "light") {
       setIsDark(false)
       document.documentElement.classList.remove("dark")
     } else {
       setIsDark(true)
       document.documentElement.classList.add("dark")
-      localStorage.setItem("theme", "dark")
     }
   }, [])
   
