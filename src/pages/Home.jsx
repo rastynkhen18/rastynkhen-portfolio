@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="container mx-auto px-4">
                 <div className="flex justify-center items-center p-5">
                     <div className="space-y-6">
-                        <h1 className="text-2xl md:text-5xl ft-bold text-[var(--white-color)] text-center">
+                        <h1 className="text-2xl md:text-5xl ft-bold text-[var(--text-color)] text-center">
                             Hi, I'm{' '}
                             <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent text-center">
                                 Rastyn Khen
@@ -45,7 +45,7 @@ const HeroSection = () => {
                                 href="https://github.com/rastynkhen18"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-sm md:text-base px-4 py-2 bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--white-color)] rounded-lg transition-all duration-300 flex items-center justify-center gap-1 cursor-pointer"
+                                className="text-sm md:text-base px-4 py-2 bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-color)] rounded-lg transition-colors duration-300 flex items-center justify-center gap-1 cursor-pointer"
                             >
                                 <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-4 h-4" />
                                 GitHub

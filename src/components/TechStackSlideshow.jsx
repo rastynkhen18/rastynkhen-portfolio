@@ -113,7 +113,7 @@ const TechStackSlideshow = () => {
               {repeatedTechStack.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row items-center gap-2 cursor-pointer transition-colors shrink-0 text-[var(--white-color)] font-semibold px-6"
+                  className="flex flex-col md:flex-row items-center gap-2 cursor-pointer transition-colors shrink-0 text-[var(--text-color)] font-semibold px-6"
                 >
                   {item.icon}
                   <span>{item.label}</span>

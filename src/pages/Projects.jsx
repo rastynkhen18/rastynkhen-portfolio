@@ -175,7 +175,7 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[var(--white-color)] mb-2">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-[var(--text-color)] mb-2">{project.title}</h3>
                   <p className="text-[var(--text-gray)] mb-4 text-sm">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
@@ -206,7 +206,7 @@ const Projects = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--white-color)] rounded-xl transition-all duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md"
+                      className="flex-1 px-4 py-2 bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--text-color)] rounded-xl transition-colors duration-200 text-center text-sm font-semibold flex items-center justify-center gap-2 shadow-md"
                     >
                       <DarkModeIcon src={GithubIcon} alt="GitHub" className="w-5 h-5" />
                       GitHub
