@@ -157,7 +157,7 @@ const Skills = () => {
 
 
   return (
-    <section id="skills" className="py-20 bg-[var(--gray-color)]">
+    <section id="skills" className="py-20">
       <div className="container mx-auto px-4">
         <FadeInOnView>
           <div className="text-2xl md:text-3xl font-bold text-center mb-12 text-[var(--text-color)] flex flex-col items-center justify-center gap-3">

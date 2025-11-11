@@ -16,7 +16,7 @@ const HeroSection = () => {
     }
 
     return (
-        <section id="home" className="py-20 bg-[var(--black-color)] mt-16">
+        <section id="home" className="py-20 mt-16">
             <div className="container mx-auto px-4">
                 <div className="flex justify-center items-center p-5">
                     <div className="space-y-6">

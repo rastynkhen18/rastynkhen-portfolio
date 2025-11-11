@@ -12,7 +12,7 @@ import TwitterXIcon from '../assets/icons/twitter-x.svg'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-[var(--gray-color)]">
+    <section id="about" className="py-20">
       <div className="container mx-auto px-4">
         <FadeInOnView>
 

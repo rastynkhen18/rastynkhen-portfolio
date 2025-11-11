@@ -70,7 +70,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-[var(--background-color)]">
+    <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
 
         <FadeInOnView>
