@@ -28,6 +28,7 @@ import MysqlIcon from '../assets/icons/mysql.svg'
 import SupabaseIcon from '../assets/icons/supabase.svg'
 import MongodbIcon from '../assets/icons/mongodb.svg'
 import FirebaseIcon from '../assets/icons/firebase.svg'
+import SqliteIcon from '../assets/icons/sqlite.svg'
 
 import ReactNativeIcon from '../assets/icons/react.svg'
 import AndroidIcon from '../assets/icons/androidstudio.png'
@@ -47,6 +48,7 @@ import VercelIcon from '../assets/icons/vercel.svg'
 import DigoTraders from '../assets/projects/digo-traders.png'
 import AvenionStyle from '../assets/projects/avenionstyle.png'
 import ButFirstCoffee from '../assets/projects/butfirstcoffee.png'
+import SnapAndShoot from '../assets/projects/snap-and-shoot.png'
 import AndroidStudioCalculator from '../assets/projects/android-studioCalculator.jpg'
 import AndroidStudioCruds from '../assets/projects/android-studioCruds.jpg'
 import UnityFlappyAngryBlackBird from '../assets/projects/unity-flappyAngryBlackBird.jpg'
@@ -78,6 +80,15 @@ const projects = [
     liveUrl: 'https://butfirstcoffee.vercel.app/',
     githubUrl: 'https://github.com/rastynkhen18/butfirstcoffee',
   },
+  {
+    title: 'Snap and Shoot',
+    description: 'Developed Snap and Shoot, an e-commerce web application using Python(Django) that offers photography and drone services.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'SQLite', 'Git', 'Github', 'Vercel'],
+    image: SnapAndShoot,
+    liveUrl: 'https://snap-shoot.vercel.app/',
+    githubUrl: 'https://github.com/rastynkhen18/snap-shoot',
+  },
+
   {
     title: 'Android Studio Calculator',
     description: 'A simple calculator app built in Android Studio using Java. Supports basic arithmetic operations.',
@@ -132,6 +143,7 @@ const techIcons = {
   'C#': CsharpIcon,
   'Python': PythonIcon,
   'MySQL': MysqlIcon,
+  'SQLite': SqliteIcon,
   'Supabase': SupabaseIcon,
   'MongoDB': MongodbIcon,
   'Firebase': FirebaseIcon,
